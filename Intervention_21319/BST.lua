@@ -3,18 +3,16 @@ gcdisplay = gFunc.LoadFile('common\\gcdisplay.lua');
 gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 profile.Sets = {
     Idle = {
-        Main = 'Viking Axe',
-        Sub = 'Viking Axe',
         Head = 'Mrc.Cpt. Headgear',
         Neck = 'Peacock Amulet',
         Ear1 = 'Beetle Earring +1',
         Ear2 = 'Beetle Earring +1',
-        Body = 'Mrc.Cpt. Doublet',
+        Body = 'Ryl.Kgt. Chainmail',
         Hands = 'Battle Gloves',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
         Waist = 'Life Belt',
-        Legs = 'Republic Subligar',
+        Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
 	Idle_Regen = {
@@ -26,20 +24,20 @@ profile.Sets = {
         Neck = 'Peacock Amulet',
         Ear1 = 'Beetle Earring +1',
         Ear2 = 'Beetle Earring +1',
-        Body = 'Mrc.Cpt. Doublet',
+        Body = 'Ryl.Kgt. Chainmail',
         Hands = 'Battle Gloves',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Life Belt',
-        Legs = 'Republic Subligar',
+        Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
-	Tp_Hybrid ={ --STR / Haste / ACC
+	Hybrid ={ --STR / Haste / ACC
         Neck = 'Spike Necklace',
         Hands = 'Wonder Mitts',
         Feet = 'Wonder Clomps',
 	},
-	Tp_Acc={ --ACC
+	Acc={ --ACC
         Hands = 'Battle Gloves',
 		Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
@@ -86,9 +84,130 @@ profile.Sets = {
 		Waist = 'Corsette',
 
     },
-	
+    Testing = {
+        Main = 'Viking Axe',
+        Sub = 'Maple Shield',
+        Ammo = 'W. Meat Broth',
+        Head = 'Mrc.Cpt. Headgear',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'Ryl.Kgt. Chainmail',
+        Hands = 'Battle Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Waist = 'Life Belt',
+        Legs = 'Ryl.Kgt. Breeches',
+        Feet = 'Wonder Clomps',
+    },
+	-- Temp = gFunc.Combine(base, override)
 };
+-- test = gFunc.Combine()
 
+-- Generating Differing set tables for TP and WS
+profile.Sets["Tp_Hybrid"] =  gFunc.Combine(profile.Sets.Tp_Default, profile.Sets.Hybrid);
+profile.Sets.Sync = {
+    Idle = {
+        Main = 'Viking Axe',
+        Sub = 'Viking Axe',
+        Head = 'Mrc.Cpt. Headgear',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'Wonder Kaftan',
+        Hands = 'Battle Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Waist = 'Life Belt',
+        Legs = 'Republic Subligar',
+        Feet = 'Wonder Clomps',
+    },
+    Idle_Regen = {
+    },
+    Idle_Refresh = {
+    },
+    Tp_Default = { --Haste Gear
+        Head = 'Mrc.Cpt. Headgear',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'Mrc.Cpt. Doublet',
+        Hands = 'Battle Gloves',
+        Ring1 = 'Courage Ring',
+        Ring2 = 'Courage Ring',
+        Waist = 'Life Belt',
+        Legs = 'Republic Subligar',
+        Feet = 'Wonder Clomps',
+    },
+    Tp_Hybrid ={ --STR / Haste / ACC
+        Neck = 'Spike Necklace',
+        Hands = 'Wonder Mitts',
+        Feet = 'Wonder Clomps',
+    },
+    Tp_Acc={ --ACC
+        Hands = 'Battle Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+
+    
+    },
+
+    Ws_Default = {
+        Head = 'Mrc.Cpt. Headgear',
+        Neck = 'Spike Necklace',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'Wonder Kaftan',
+        Hands = 'Wonder Mitts',
+        Ring1 = 'Courage Ring',
+        Ring2 = 'Courage Ring',
+        Waist = 'Life Belt',
+        Legs = 'Wonder Braccae',
+        Feet = 'Wonder Clomps',
+    },
+    Ws_Hybrid = {
+    },
+    Ws_Acc = {
+        Neck = 'Peacock Amulet',
+    },
+    Dt = {
+    },
+    Movement = {
+    },
+    Pet_Dt = {
+    },
+    HP = {
+        Body = 'Wonder Kaftan',
+        Hands = 'Wonder Mitts',
+        Back = 'Breath Mantle',
+        Legs = 'Wonder Braccae',
+        Feet = 'Wonder Clomps',
+    },
+    Charm = {
+        Head = 'Noble\'s Ribbon',
+        Neck = 'Bird Whistle',
+        Ring1 = 'Hope Ring',
+        Ring2 = 'Hope Ring',
+        Waist = 'Corsette',
+
+    },
+    Testing = {
+        Main = 'Viking Axe',
+        Sub = 'Maple Shield',
+        Ammo = 'W. Meat Broth',
+        Head = 'Mrc.Cpt. Headgear',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'Mrc.Cpt. Doublet',
+        Hands = 'Battle Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Waist = 'Life Belt',
+        Legs = 'Republic Subligar',
+        Feet = 'Wonder Clomps',
+    },
+};
 
 
 profile.Packer = {
@@ -114,19 +233,26 @@ profile.HandleCommand = function(args)
 end
 	
 profile.HandleDefault = function()
-	gFunc.EquipSet(profile.Sets.Idle);
-	local test = gcinclude.levelSync(55)
-	--print(test)
+    local syncing = gcinclude.levelSync(55)
+    local gearSet
+
+    -- if syncing == 
+    -- print(syncing);
+    if syncing == 0 then
+        gearSet = profile.Sets.Sync
+    end
+
+	gFunc.EquipSet(gearSet.Idle);
 	local player = gData.GetPlayer();
     if (player.Status == 'Engaged') then
-        gFunc.EquipSet(profile.Sets.Tp_Default)
+        gFunc.EquipSet(gearSet.Tp_Default)
         if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
 			gFunc.EquipSet('Tp_' .. gcdisplay.GetCycle('MeleeSet')) end
-		--if (gcdisplay.GetToggle('TH') == true) then gFunc.EquipSet(profile.Sets.TH) end
+		--if (gcdisplay.GetToggle('TH') == true) then gFunc.EquipSet(pgearSet.TH) end
     elseif (player.Status == 'Resting') then
-        gFunc.EquipSet(profile.Sets.Resting);
+        gFunc.EquipSet(gearSet.Resting);
     elseif (player.IsMoving == true) then
-		gFunc.EquipSet(profile.Sets.Movement);
+		gFunc.EquipSet(gearSet.Movement);
     end
 	
     gcinclude.CheckDefault();

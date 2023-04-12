@@ -744,13 +744,13 @@ function gcinclude.levelSync(levelOffset)
 	
 	if (mainJobSync < mainJobLevel and mainJobSync < levelOffset) then
 		--Level Sync Gear
-		syncData = 'Sync_';
+		syncData = 1 --'Sync_';
 	elseif (mainJobSync < mainJobLevel and mainJobSync == 40) then
 		--Level 40 Sync Gear
-		syncData = 'Sync40_';
+		syncData = 2 --'Sync40_';
 	else
 		--Main Gear
-		syncData = '';
+		syncData = 0 --'NoSync';
 	end
 	return syncData;
 
