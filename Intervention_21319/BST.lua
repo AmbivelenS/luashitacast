@@ -1,6 +1,19 @@
 local profile = {};
 gcdisplay = gFunc.LoadFile('common\\gcdisplay.lua');
 gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
+
+--Logic for custom functions, search for commented names to find what they are connected to.
+    -- LevelSync
+local highestGearLevel = 55
+    -- CustomProfiles
+local customProfiles = {profile.Sets, profile.Sync}
+local customSets = {"Hybrid","Acc"}
+    --ProfileValues
+local macroBook = '4'
+local macroSet = '1'
+local RegenGearHPP = 0
+local RefreshGearMPP = 0
+
 profile.Sets = {
     Idle = {
         Head = 'Mrc.Cpt. Headgear',
@@ -32,7 +45,17 @@ profile.Sets = {
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
-	Hybrid ={ --STR / Haste / ACC
+
+    --Tables here are empty and will be filled in by CustomProfiles
+	Tp_Hybrid ={},
+
+    Tp_Acc ={},
+
+    --Custom Tables end here
+
+
+    --
+    Hybrid ={ --STR / Haste / ACC
         Neck = 'Spike Necklace',
         Hands = 'Wonder Mitts',
         Feet = 'Wonder Clomps',
@@ -54,7 +77,7 @@ profile.Sets = {
         Hands = 'Wonder Mitts',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
-        Waist = 'Life Belt',
+        Waist = 'Brave Belt',
         Legs = 'Wonder Braccae',
         Feet = 'Wonder Clomps',
 	},
@@ -62,6 +85,7 @@ profile.Sets = {
     },
 	Ws_Acc = {
 		Neck = 'Peacock Amulet',
+        Waist = 'Life Belt'
 	},
 	Dt = {
 	},
@@ -69,21 +93,7 @@ profile.Sets = {
 	},
 	Pet_Dt = {
 	},
-    HP = {
-        Body = 'Wonder Kaftan',
-        Hands = 'Wonder Mitts',
-        Back = 'Breath Mantle',
-        Legs = 'Wonder Braccae',
-        Feet = 'Wonder Clomps',
-    },
-	Charm = {
-		Head = 'Noble\'s Ribbon',
-		Neck = 'Bird Whistle',
-        Ring1 = 'Hope Ring',
-        Ring2 = 'Hope Ring',
-		Waist = 'Corsette',
 
-    },
     Testing = {
         Main = 'Viking Axe',
         Sub = 'Maple Shield',
@@ -102,14 +112,11 @@ profile.Sets = {
     },
 	-- Temp = gFunc.Combine(base, override)
 };
--- test = gFunc.Combine()
 
--- Generating Differing set tables for TP and WS
-profile.Sets["Tp_Hybrid"] =  gFunc.Combine(profile.Sets.Tp_Default, profile.Sets.Hybrid);
-profile.Sets.Sync = {
+
+--Level Sync Set
+profile.Sync = {
     Idle = {
-        Main = 'Viking Axe',
-        Sub = 'Viking Axe',
         Head = 'Mrc.Cpt. Headgear',
         Neck = 'Peacock Amulet',
         Ear1 = 'Beetle Earring +1',
@@ -139,12 +146,15 @@ profile.Sets.Sync = {
         Legs = 'Republic Subligar',
         Feet = 'Wonder Clomps',
     },
-    Tp_Hybrid ={ --STR / Haste / ACC
+    Tp_Hybrid ={},
+
+    Tp_Acc ={},
+    Hybrid ={ --STR / Haste / ACC
         Neck = 'Spike Necklace',
         Hands = 'Wonder Mitts',
         Feet = 'Wonder Clomps',
     },
-    Tp_Acc={ --ACC
+    Acc={ --ACC
         Hands = 'Battle Gloves',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
@@ -161,7 +171,7 @@ profile.Sets.Sync = {
         Hands = 'Wonder Mitts',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
-        Waist = 'Life Belt',
+        Waist = 'Brave Belt',
         Legs = 'Wonder Braccae',
         Feet = 'Wonder Clomps',
     },
@@ -169,6 +179,7 @@ profile.Sets.Sync = {
     },
     Ws_Acc = {
         Neck = 'Peacock Amulet',
+        Waist = 'Life Belt'
     },
     Dt = {
     },
@@ -176,6 +187,9 @@ profile.Sets.Sync = {
     },
     Pet_Dt = {
     },
+
+};
+profile.shared = {
     HP = {
         Body = 'Wonder Kaftan',
         Hands = 'Wonder Mitts',
@@ -191,37 +205,30 @@ profile.Sets.Sync = {
         Waist = 'Corsette',
 
     },
-    Testing = {
-        Main = 'Viking Axe',
-        Sub = 'Maple Shield',
-        Ammo = 'W. Meat Broth',
-        Head = 'Mrc.Cpt. Headgear',
-        Neck = 'Peacock Amulet',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
-        Body = 'Mrc.Cpt. Doublet',
-        Hands = 'Battle Gloves',
-        Ring1 = 'Balance Ring',
-        Ring2 = 'Balance Ring',
-        Waist = 'Life Belt',
-        Legs = 'Republic Subligar',
-        Feet = 'Wonder Clomps',
-    },
+
 };
 
+-- Generating Differing set tables for TP and WS, looping through custom sets and generating Table values in the gear sets.
+-- CustomProfiles
+for _, profiles in ipairs(customProfiles) do
+    print(profiles)
+    for _, x in ipairs(customSets) do
+        profiles[('Tp_' .. x)] = gFunc.Combine(profiles['Tp_Default'], profiles[x])
+    end
+end
 
 profile.Packer = {
 };
 
 
-
+--ProfileValues
 profile.OnLoad = function()
 	gcinclude.Initialize();
     gSettings.AllowAddSet = true;
-	AshitaCore:GetChatManager():QueueCommand(1, '/macro book 4');
-    AshitaCore:GetChatManager():QueueCommand(1, '/macro set 1');
-	gcinclude.settings.RegenGearHPP = 0;
-    gcinclude.settings.RefreshGearMPP = 0;
+	AshitaCore:GetChatManager():QueueCommand(1, '/macro book'.. macroBook);
+    AshitaCore:GetChatManager():QueueCommand(1, '/macro set'.. macroSet);
+	gcinclude.settings.RegenGearHPP = RegenGearHPP;
+    gcinclude.settings.RefreshGearMPP = RefreshGearMPP;
 end
 
 profile.OnUnload = function()
@@ -233,13 +240,15 @@ profile.HandleCommand = function(args)
 end
 	
 profile.HandleDefault = function()
-    local syncing = gcinclude.levelSync(55)
+    
+    --Logic to determine what gear set to use
+    --LevelSync
+    local syncing = gcinclude.levelSync(highestGearLevel)
     local gearSet
-
-    -- if syncing == 
-    -- print(syncing);
     if syncing == 0 then
-        gearSet = profile.Sets.Sync
+        gearSet = profile.Sets
+    elseif syncing == 1 then
+        gearSet = profile.Sync
     end
 
 	gFunc.EquipSet(gearSet.Idle);
