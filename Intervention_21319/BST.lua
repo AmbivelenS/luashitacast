@@ -6,8 +6,8 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
     -- LevelSync
 local highestGearLevel = 55
     -- CustomProfiles
-local customProfiles = {profile.Sets, profile.Sync}
-local customSets = {"Hybrid","Acc"}
+-- local customProfiles = {profile.Sets, profile.Sync}
+-- local customSets = {"Hybrid","Acc"}
     --ProfileValues
 local macroBook = '4'
 local macroSet = '1'
@@ -208,14 +208,14 @@ profile.shared = {
 
 };
 
--- Generating Differing set tables for TP and WS, looping through custom sets and generating Table values in the gear sets.
+-- Generating Differing set tables for TP and WS, looping through custom sets and generating Table values in the gear sets. NOTE: This maybe depecated keeping code
 -- CustomProfiles
-for _, profiles in ipairs(customProfiles) do
-    print(profiles)
-    for _, x in ipairs(customSets) do
-        profiles[('Tp_' .. x)] = gFunc.Combine(profiles['Tp_Default'], profiles[x])
-    end
-end
+-- for _, profiles in ipairs(customProfiles) do
+--     print(profiles)
+--     for _, x in ipairs(customSets) do
+--         profiles[('Tp_' .. x)] = gFunc.Combine(profiles['Tp_Default'], profiles[x])
+--     end
+-- end
 
 profile.Packer = {
 };
@@ -225,8 +225,8 @@ profile.Packer = {
 profile.OnLoad = function()
 	gcinclude.Initialize();
     gSettings.AllowAddSet = true;
-	AshitaCore:GetChatManager():QueueCommand(1, '/macro book'.. macroBook);
-    AshitaCore:GetChatManager():QueueCommand(1, '/macro set'.. macroSet);
+	AshitaCore:GetChatManager():QueueCommand(1, '/macro book '.. macroBook);
+    AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 	gcinclude.settings.RegenGearHPP = RegenGearHPP;
     gcinclude.settings.RefreshGearMPP = RefreshGearMPP;
 end
@@ -252,11 +252,15 @@ profile.HandleDefault = function()
     end
 
 	gFunc.EquipSet(gearSet.Idle);
+    gearSet.TP_Hybrid = gFunc.Combine(gearSet.Tp_Default, gearSet.Hybrid)
+    gearSet.TP_Acc = gFunc.Combine(gearSet.Tp_Default, gearSet.Acc)
 	local player = gData.GetPlayer();
     if (player.Status == 'Engaged') then
-        gFunc.EquipSet(gearSet.Tp_Default)
         if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
-			gFunc.EquipSet('Tp_' .. gcdisplay.GetCycle('MeleeSet')) end
+			gFunc.EquipSet('Tp_' .. gcdisplay.GetCycle('MeleeSet')) 
+        else 
+            gFunc.EquipSet(gearSet.Tp_Default)
+        end
 		--if (gcdisplay.GetToggle('TH') == true) then gFunc.EquipSet(pgearSet.TH) end
     elseif (player.Status == 'Resting') then
         gFunc.EquipSet(gearSet.Resting);
@@ -275,10 +279,12 @@ profile.HandleWeaponskill = function()
     else
         local ws = gData.GetAction();
     
-        gFunc.EquipSet(profile.Sets.Ws_Default)
-	if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
-        gFunc.EquipSet('Ws_' .. gcdisplay.GetCycle('MeleeSet')) end
         
+	if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
+        gFunc.EquipSet('Ws_' .. gcdisplay.GetCycle('MeleeSet')) 
+    else
+        gFunc.EquipSet(profile.Sets.Ws_Default)
+    end       
 --        if string.match(ws.Name, 'Aeolian Edge') then
 --            gFunc.EquipSet(profile.Sets.Aedge_Default)
 --            if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then

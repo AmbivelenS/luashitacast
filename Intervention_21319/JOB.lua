@@ -146,8 +146,8 @@ profile.Packer = {
 profile.OnLoad = function()
 	gcinclude.Initialize();
     gSettings.AllowAddSet = true;
-	AshitaCore:GetChatManager():QueueCommand(1, '/macro book'.. macroBook);
-    AshitaCore:GetChatManager():QueueCommand(1, '/macro set'.. macroSet);
+	AshitaCore:GetChatManager():QueueCommand(1, '/macro book '.. macroBook);
+    AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 	gcinclude.settings.RegenGearHPP = RegenGearHPP;
     gcinclude.settings.RefreshGearMPP = RefreshGearMPP;
 end
