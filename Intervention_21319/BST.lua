@@ -15,8 +15,16 @@ local RegenGearHPP = 0
 local RefreshGearMPP = 0
 
 profile.Sets = {
+    mainOneHand = {
+        Main = "Darksteel Pick +1",
+        Sub = "Maple Shield",
+    },
+    mainDualWield ={
+        Main = "Darksteel Pick +1",
+        Sub = "Viking Axe",
+    },
     Idle = {
-        Head = 'Mrc.Cpt. Headgear',
+        Head = 'Shep. Bonnet',
         Neck = 'Peacock Amulet',
         Ear1 = 'Beetle Earring +1',
         Ear2 = 'Beetle Earring +1',
@@ -33,7 +41,7 @@ profile.Sets = {
 	Idle_Refresh = {
 	},
 	Tp_Default = { --Haste Gear
-        Head = 'Mrc.Cpt. Headgear',
+        Head = 'Shep. Bonnet',
         Neck = 'Peacock Amulet',
         Ear1 = 'Beetle Earring +1',
         Ear2 = 'Beetle Earring +1',
@@ -61,7 +69,7 @@ profile.Sets = {
         Feet = 'Wonder Clomps',
 	},
 	Acc={ --ACC
-        Hands = 'Battle Gloves',
+        Hands = 'Beast Gloves',
 		Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
 
@@ -85,7 +93,11 @@ profile.Sets = {
     },
 	Ws_Acc = {
 		Neck = 'Peacock Amulet',
-        Waist = 'Life Belt'
+        Waist = 'Life Belt',
+        Hands = 'Beast Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+
 	},
 	Dt = {
 	},
@@ -155,7 +167,7 @@ profile.Sync = {
         Feet = 'Wonder Clomps',
     },
     Acc={ --ACC
-        Hands = 'Battle Gloves',
+        Hands = 'Beast Gloves',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
 
@@ -198,7 +210,10 @@ profile.shared = {
         Feet = 'Wonder Clomps',
     },
     Charm = {
+        Main = "Light Staff",
         Head = 'Noble\'s Ribbon',
+        Hands ='Beast Gloves',
+        Feet = "Beast Gaiters",
         Neck = 'Bird Whistle',
         Ring1 = 'Hope Ring',
         Ring2 = 'Hope Ring',
@@ -245,16 +260,25 @@ profile.HandleDefault = function()
     --LevelSync
     local syncing = gcinclude.levelSync(highestGearLevel)
     local gearSet
+    local player = gData.GetPlayer();
+
     if syncing == 0 then
         gearSet = profile.Sets
     elseif syncing == 1 then
         gearSet = profile.Sync
     end
 
-	gFunc.EquipSet(gearSet.Idle);
+    if player.SubJob == 'NIN' then
+        weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainDualWield)
+    else
+        weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainOneHand)
+    end
+
+	gFunc.EquipSet(weaponEquip);
     gearSet.TP_Hybrid = gFunc.Combine(gearSet.Tp_Default, gearSet.Hybrid)
     gearSet.TP_Acc = gFunc.Combine(gearSet.Tp_Default, gearSet.Acc)
-	local player = gData.GetPlayer();
+
+    
     if (player.Status == 'Engaged') then
         if (gcdisplay.GetCycle('MeleeSet') ~= 'Default') then
 			gFunc.EquipSet('Tp_' .. gcdisplay.GetCycle('MeleeSet')) 
@@ -301,7 +325,7 @@ end
 profile.HandleAbility = function()
     local ability = gData.GetAction();
 	if string.match(ability.Name, 'Charm') then
-		gFunc.EquipSet(profile.Sets.Charm); end
+		gFunc.EquipSet(profile.shared.Charm); end
 end
 
 profile.HandleItem = function()
