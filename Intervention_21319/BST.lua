@@ -21,7 +21,7 @@ profile.Sets = {
     },
     mainDualWield ={
         Main = "Darksteel Pick +1",
-        Sub = "Viking Axe",
+        Sub = "Barbaroi Axe",
     },
     Idle = {
         Head = 'Shep. Bonnet',
@@ -29,10 +29,11 @@ profile.Sets = {
         Ear1 = 'Beetle Earring +1',
         Ear2 = 'Beetle Earring +1',
         Body = 'Ryl.Kgt. Chainmail',
+        Back = 'Amemet Mantle',
         Hands = 'Battle Gloves',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
-        Waist = 'Life Belt',
+        Waist = 'Swift Belt',
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
@@ -49,7 +50,7 @@ profile.Sets = {
         Hands = 'Battle Gloves',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
-        Waist = 'Life Belt',
+        Waist = 'Swift Belt',
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
@@ -128,6 +129,14 @@ profile.Sets = {
 
 --Level Sync Set
 profile.Sync = {
+    mainOneHand = {
+        Main = "Mythril Pick",
+        Sub = "Maple Shield",
+    },
+    mainDualWield ={
+        Main = "Mythril Pick +1",
+        Sub = "Viking Axe",
+    },
     Idle = {
         Head = 'Mrc.Cpt. Headgear',
         Neck = 'Peacock Amulet',
@@ -219,6 +228,9 @@ profile.shared = {
         Ring2 = 'Hope Ring',
         Waist = 'Corsette',
 
+    },
+    Reward = {
+        Feet = "Beast Gaiters"
     },
 
 };
@@ -325,7 +337,10 @@ end
 profile.HandleAbility = function()
     local ability = gData.GetAction();
 	if string.match(ability.Name, 'Charm') then
-		gFunc.EquipSet(profile.shared.Charm); end
+		gFunc.EquipSet(profile.shared.Charm); 
+    elseif string.match(ability.Name, 'Reward') then
+        gFunc.EquipSet(profile.shared.Reward);
+    end
 end
 
 profile.HandleItem = function()

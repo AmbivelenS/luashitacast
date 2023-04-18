@@ -20,16 +20,16 @@ profile.Sets = {
     Idle = {
 
     },
-	Idle_Regen = {
-	},
-	Idle_Refresh = {
-	},
-	Tp_Default = { --Haste Gear
+    Idle_Regen = {
+    },
+    Idle_Refresh = {
+    },
+    Tp_Default = { --Haste Gear
 
     },
 
     --Tables here are empty and will be filled in by CustomProfiles
-	Tp_Hybrid ={},
+    Tp_Hybrid ={},
 
     Tp_Acc ={},
 
@@ -39,26 +39,26 @@ profile.Sets = {
     --
     Hybrid ={ --STR / Haste / ACC
 
-	},
-	Acc={ --ACC
-
-	},
-
-	Ws_Default = {
-
-	},
-	Ws_Hybrid = {
+    },
+    Acc={ --ACC
 
     },
-	Ws_Acc = {
 
-	},
-	Dt = {
-	},
-	Movement = {
-	},
-	Pet_Dt = {
-	},
+    Ws_Default = {
+
+    },
+    Ws_Hybrid = {
+
+    },
+    Ws_Acc = {
+
+    },
+    Dt = {
+    },
+    Movement = {
+    },
+    Pet_Dt = {
+    },
 
 };
 
