@@ -20,20 +20,43 @@ profile.Sets = {
     mainOneHand = {
     },
     mainDualWield ={
+        Main="Hibari +1",
+        Sub= "Hibari +1",
     },
     Idle = {
+        Head = 'San. Bandana',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'San d\'Orian Vest',
+        Hands = 'Federation Tekko',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Legs = 'Republic Subligar',
+        Feet = 'Fed. Kyahan',
 
     },
-    Idle_Regen = {
-    },
-    Idle_Refresh = {
-    },
-    Tp_Default = { --Haste Gear
+	Idle_Regen = {
+	},
+	Idle_Refresh = {
+	},
+	Tp_Default = { --Haste Gear
+        Head = 'San. Bandana',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'San d\'Orian Vest',
+        Hands = 'Federation Tekko',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Legs = 'Republic Subligar',
+        Feet = 'Fed. Kyahan',
+
 
     },
 
     --Tables here are empty and will be filled in by CustomProfiles
-    Tp_Hybrid ={},
+	Tp_Hybrid ={},
 
     Tp_Acc ={},
 
@@ -43,25 +66,39 @@ profile.Sets = {
     --
     Hybrid ={ --STR / Haste / ACC
 
-    },
-    Acc={ --ACC
+	},
+	Acc={ --ACC
+
+	},
+
+	Ws_Default = {
+
+	},
+	Ws_Hybrid = {
 
     },
+	Ws_Acc = {
 
-    Ws_Default = {
-
-    },
-    Ws_Hybrid = {
-
-    },
-    Ws_Acc = {
-
-    },
-    Dt = {
-    },
-    Movement = {
-    },
-    Pet_Dt = {
+	},
+	Dt = {
+	},
+	Movement = {
+	},
+	Pet_Dt = {
+	},
+    ['Testing'] = {
+        Main = 'Hibari +1',
+        Sub = 'Hibari +1',
+        Head = 'San. Bandana',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Beetle Earring +1',
+        Ear2 = 'Beetle Earring +1',
+        Body = 'San d\'Orian Vest',
+        Hands = 'Federation Tekko',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Legs = 'Republic Subligar',
+        Feet = 'Fed. Kyahan',
     },
 
 };
@@ -183,7 +220,7 @@ profile.HandleDefault = function()
         gearSet = profile.Sync
     end
 
-    if player.SubJob == 'NIN' then
+    if player.SubJob == 'NIN' or player.MainJob == 'NIN'then
         weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainDualWield)
     else
         weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainOneHand)

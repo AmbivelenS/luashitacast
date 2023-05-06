@@ -4,7 +4,7 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 --Logic for custom functions, search for commented names to find what they are connected to.
     -- LevelSync
-local highestGearLevel = 55
+local highestGearLevel = 68
     -- CustomProfiles
 -- local customProfiles = {profile.Sets, profile.Sync}
 -- local customSets = {"Hybrid","Acc"}
@@ -24,35 +24,35 @@ profile.Sets = {
         Sub = "Barbaroi Axe",
     },
     Idle = {
-        Head = 'Shep. Bonnet',
+        Head = 'Celata',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
-        Body = 'Ryl.Kgt. Chainmail',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
+        Body = 'Haubergeon',
         Back = 'Amemet Mantle',
-        Hands = 'Battle Gloves',
+        Hands = 'Thick Mufflers',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
         Waist = 'Swift Belt',
         Legs = 'Ryl.Kgt. Breeches',
-        Feet = 'Wonder Clomps',
+        Feet = 'Thick Sollerets',
     },
 	Idle_Regen = {
 	},
 	Idle_Refresh = {
 	},
 	Tp_Default = { --Haste Gear
-        Head = 'Shep. Bonnet',
+        Head = 'Celata',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
-        Body = 'Ryl.Kgt. Chainmail',
-        Hands = 'Battle Gloves',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
+        Body = 'Haubergeon',
+        Hands = 'Thick Mufflers',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Swift Belt',
         Legs = 'Ryl.Kgt. Breeches',
-        Feet = 'Wonder Clomps',
+        Feet = 'Thick Sollerets',
     },
 
     --Tables here are empty and will be filled in by CustomProfiles
@@ -78,16 +78,16 @@ profile.Sets = {
 	},
 
 	Ws_Default = {
-        Head = 'Mrc.Cpt. Headgear',
+        Head = 'Celata',
         Neck = 'Spike Necklace',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
-        Body = 'Wonder Kaftan',
-        Hands = 'Wonder Mitts',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
+        Body = 'Haubergeon',
+        Hands = 'Ogre Gloves',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Brave Belt',
-        Legs = 'Wonder Braccae',
+        Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
 	},
 	Ws_Hybrid = {
@@ -113,8 +113,8 @@ profile.Sets = {
         Ammo = 'W. Meat Broth',
         Head = 'Mrc.Cpt. Headgear',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
         Body = 'Ryl.Kgt. Chainmail',
         Hands = 'Battle Gloves',
         Ring1 = 'Balance Ring',
@@ -130,24 +130,25 @@ profile.Sets = {
 --Level Sync Set
 profile.Sync = {
     mainOneHand = {
-        Main = "Mythril Pick",
+        Main = "Darksteel Pick +1",
         Sub = "Maple Shield",
     },
     mainDualWield ={
-        Main = "Mythril Pick +1",
-        Sub = "Viking Axe",
+        Main = "Darksteel Pick +1",
+        Sub = "Barbaroi Axe",
     },
     Idle = {
-        Head = 'Mrc.Cpt. Headgear',
+        Head = 'Shep. Bonnet',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
-        Body = 'Wonder Kaftan',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
+        Body = 'Ryl.Kgt. Chainmail',
+        Back = 'Amemet Mantle',
         Hands = 'Battle Gloves',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
-        Waist = 'Life Belt',
-        Legs = 'Republic Subligar',
+        Waist = 'Swift Belt',
+        Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
     Idle_Regen = {
@@ -155,21 +156,28 @@ profile.Sync = {
     Idle_Refresh = {
     },
     Tp_Default = { --Haste Gear
-        Head = 'Mrc.Cpt. Headgear',
+        Head = 'Shep. Bonnet',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
-        Body = 'Mrc.Cpt. Doublet',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
+        Body = 'Ryl.Kgt. Chainmail',
         Hands = 'Battle Gloves',
         Ring1 = 'Courage Ring',
         Ring2 = 'Courage Ring',
-        Waist = 'Life Belt',
-        Legs = 'Republic Subligar',
+        Waist = 'Swift Belt',
+        Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
     },
+
+    --Tables here are empty and will be filled in by CustomProfiles
     Tp_Hybrid ={},
 
     Tp_Acc ={},
+
+    --Custom Tables end here
+
+
+    --
     Hybrid ={ --STR / Haste / ACC
         Neck = 'Spike Necklace',
         Hands = 'Wonder Mitts',
@@ -186,8 +194,8 @@ profile.Sync = {
     Ws_Default = {
         Head = 'Mrc.Cpt. Headgear',
         Neck = 'Spike Necklace',
-        Ear1 = 'Beetle Earring +1',
-        Ear2 = 'Beetle Earring +1',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
         Body = 'Wonder Kaftan',
         Hands = 'Wonder Mitts',
         Ring1 = 'Courage Ring',
@@ -200,13 +208,34 @@ profile.Sync = {
     },
     Ws_Acc = {
         Neck = 'Peacock Amulet',
-        Waist = 'Life Belt'
+        Waist = 'Life Belt',
+        Hands = 'Beast Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+
     },
     Dt = {
     },
     Movement = {
     },
     Pet_Dt = {
+    },
+
+    Testing = {
+        Main = 'Viking Axe',
+        Sub = 'Maple Shield',
+        Ammo = 'W. Meat Broth',
+        Head = 'Mrc.Cpt. Headgear',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Spike Earring',
+        Ear2 = 'Spike Earring',
+        Body = 'Ryl.Kgt. Chainmail',
+        Hands = 'Battle Gloves',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Waist = 'Life Belt',
+        Legs = 'Ryl.Kgt. Breeches',
+        Feet = 'Wonder Clomps',
     },
 
 };
