@@ -11,13 +11,25 @@ local highestGearLevel = 10
 local customProfiles = {profile.Sets, profile.Sync}
 local customSets = {"Hybrid","Acc"}
     --ProfileValues
-local macroBook = '1'
+local macroBook = '3'
 local macroSet = '1'
 local RegenGearHPP = 0
 local RefreshGearMPP = 0
 
 profile.Sets = {
+    mainOneHand ={
+        Main = 'Kukulcan\'s Staff',
+    },
     Idle = {
+        Head = 'Shep. Bonnet',
+        Neck = 'Peacock Amulet',
+        Body = 'Evoker\'s Doublet',
+        Hands = 'Evoker\'s Bracers',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Waist = 'Swift Belt',
+        Legs = 'Evoker\'s Spats',
+        Feet = 'Evoker\'s Pigaches',
 
     },
     Idle_Regen = {
@@ -58,6 +70,23 @@ profile.Sets = {
     Movement = {
     },
     Pet_Dt = {
+    },
+    Resting = {
+        Main = 'Dark Staff',
+        Body = 'Seer\'s Tunic',
+        Legs = 'Barons\'s Slops',
+    },
+    ['testing'] = {
+        Main = 'Kukulcan\'s Staff',
+        Head = 'Shep. Bonnet',
+        Neck = 'Peacock Amulet',
+        Body = 'Evoker\'s Doublet',
+        Hands = 'Evoker\'s Bracers',
+        Ring1 = 'Balance Ring',
+        Ring2 = 'Balance Ring',
+        Waist = 'Swift Belt',
+        Legs = 'Evoker\'s Spats',
+        Feet = 'Evoker\'s Pigaches',
     },
 
 };
@@ -162,11 +191,13 @@ end
     
 profile.HandleDefault = function()
     
-    --Logic to determine what gear set to use
-    --LevelSync
+    -- Logic to determine what gear set to use
+    -- LevelSync
     local syncing = gcinclude.levelSync(highestGearLevel)
     local gearSet
-    local player = gData.GetPlayer();
+    local player = gData.GetPlayer()
+    local pet = gData.GetPet()
+
 
     if syncing == 0 then
         gearSet = profile.Sets
@@ -180,7 +211,6 @@ profile.HandleDefault = function()
         weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainOneHand)
     end
 
-    gFunc.EquipSet(weaponEquip);
     gearSet.TP_Hybrid = gFunc.Combine(gearSet.Tp_Default, gearSet.Hybrid)
     gearSet.TP_Acc = gFunc.Combine(gearSet.Tp_Default, gearSet.Acc)
 
@@ -196,8 +226,21 @@ profile.HandleDefault = function()
         gFunc.EquipSet(gearSet.Resting);
     elseif (player.IsMoving == true) then
         gFunc.EquipSet(gearSet.Movement);
+    elseif (player.Status == 'Idle') then
+        gFunc.EquipSet(weaponEquip);
+
     end
     
+    --Summoner Logic
+    if (pet ~= nil) then
+        if pet.Name == 'Carbuncle' then
+            gFunc.Equip('main', gcinclude.Summons[pet.Name]); 
+            gFunc.Equip('hands', 'Carbuncle Mitts'); 
+        else
+            gFunc.Equip('main', gcinclude.Summons[pet.Name]); 
+        end
+    end 
+    -- print(pet.Name)
     gcinclude.CheckDefault();
     --if (gcdisplay.GetToggle('DTset') == true) then gFunc.EquipSet(profile.Sets.Dt) end;
     --if (gcdisplay.GetToggle('Kite') == true) then gFunc.EquipSet(profile.Sets.Movement) end;
@@ -242,6 +285,13 @@ end
 
 profile.HandleMidcast = function()
     local spell = gData.GetAction();
+    if (spell.Skill == 'Healing Magic') then
+        gFunc.Equip('main', gcinclude.ElementalStaves[spell.Element]);  
+    elseif (spell.Skill == 'Summoning') then
+        gFunc.Equip('main', gcinclude.Summons[spell.Name]); 
+    end
+
+    
 
     if (spell.Skill == 'Ninjutsu') then
         if string.contains(spell.Name, 'Utsusemi') then
