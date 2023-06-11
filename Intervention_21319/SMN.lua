@@ -23,7 +23,7 @@ profile.Sets = {
     Idle = {
         Head = 'Shep. Bonnet',
         Neck = 'Peacock Amulet',
-        Body = 'Evoker\'s Doublet',
+        Body = 'Austere Robe',
         Hands = 'Evoker\'s Bracers',
         Ring1 = 'Balance Ring',
         Ring2 = 'Balance Ring',
@@ -197,7 +197,7 @@ profile.HandleDefault = function()
     local gearSet
     local player = gData.GetPlayer()
     local pet = gData.GetPet()
-
+    local meleeStaff = gcinclude.MeleeStaff
 
     if syncing == 0 then
         gearSet = profile.Sets
@@ -232,12 +232,13 @@ profile.HandleDefault = function()
     end
     
     --Summoner Logic
+    
     if (pet ~= nil) then
+        if meleeStaff == false then
+            gFunc.Equip('main', gcinclude.Summons[pet.Name]); 
+        end
         if pet.Name == 'Carbuncle' then
-            gFunc.Equip('main', gcinclude.Summons[pet.Name]); 
             gFunc.Equip('hands', 'Carbuncle Mitts'); 
-        else
-            gFunc.Equip('main', gcinclude.Summons[pet.Name]); 
         end
     end 
     -- print(pet.Name)
@@ -285,10 +286,13 @@ end
 
 profile.HandleMidcast = function()
     local spell = gData.GetAction();
-    if (spell.Skill == 'Healing Magic') then
-        gFunc.Equip('main', gcinclude.ElementalStaves[spell.Element]);  
-    elseif (spell.Skill == 'Summoning') then
-        gFunc.Equip('main', gcinclude.Summons[spell.Name]); 
+    local meleeStaff = gcinclude.MeleeStaff
+    if meleeStaff == false then
+        if (spell.Skill == 'Healing Magic') then
+            gFunc.Equip('main', gcinclude.ElementalStaves[spell.Element]);  
+        elseif (spell.Skill == 'Summoning') then
+            gFunc.Equip('main', gcinclude.Summons[spell.Name]); 
+        end
     end
 
     

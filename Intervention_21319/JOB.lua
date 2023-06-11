@@ -189,7 +189,6 @@ profile.HandleDefault = function()
         weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainOneHand)
     end
 
-    gFunc.EquipSet(weaponEquip);
     gearSet.TP_Hybrid = gFunc.Combine(gearSet.Tp_Default, gearSet.Hybrid)
     gearSet.TP_Acc = gFunc.Combine(gearSet.Tp_Default, gearSet.Acc)
 
@@ -205,6 +204,8 @@ profile.HandleDefault = function()
         gFunc.EquipSet(gearSet.Resting);
     elseif (player.IsMoving == true) then
         gFunc.EquipSet(gearSet.Movement);
+    elseif (player.Status == 'Idle') then
+        gFunc.EquipSet(weaponEquip);
     end
     
     gcinclude.CheckDefault();
