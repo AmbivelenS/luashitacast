@@ -4,7 +4,7 @@ gcinclude = gFunc.LoadFile('common\\gcinclude.lua');
 
 --Logic for custom functions, search for commented names to find what they are connected to.
     -- LevelSync
-local highestGearLevel = 68
+local highestGearLevel = 75
     -- CustomProfiles
 -- local customProfiles = {profile.Sets, profile.Sync}
 -- local customSets = {"Hybrid","Acc"}
@@ -16,7 +16,7 @@ local RefreshGearMPP = 0
 
 profile.Sets = {
     mainOneHand = {
-        Main = "Darksteel Pick +1",
+        Main = "Pick of Trials",
         Sub = "Maple Shield",
     },
     mainDualWield ={
@@ -31,8 +31,8 @@ profile.Sets = {
         Body = 'Haubergeon',
         Back = 'Amemet Mantle',
         Hands = 'Thick Mufflers',
-        Ring1 = 'Balance Ring',
-        Ring2 = 'Balance Ring',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
         Waist = 'Swift Belt',
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Thick Sollerets',
@@ -48,8 +48,8 @@ profile.Sets = {
         Ear2 = 'Spike Earring',
         Body = 'Haubergeon',
         Hands = 'Thick Mufflers',
-        Ring1 = 'Courage Ring',
-        Ring2 = 'Courage Ring',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
         Waist = 'Swift Belt',
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Thick Sollerets',
@@ -332,7 +332,9 @@ profile.HandleDefault = function()
     elseif (player.IsMoving == true) then
 		gFunc.EquipSet(gearSet.Movement);
     end
-	
+	if (player.MP <= 49 and player.MaxMP ~= 0) then
+        gFunc.Equip('Body', 'Gaudy Harness');
+    end
     gcinclude.CheckDefault();
     --if (gcdisplay.GetToggle('DTset') == true) then gFunc.EquipSet(profile.Sets.Dt) end;
     --if (gcdisplay.GetToggle('Kite') == true) then gFunc.EquipSet(profile.Sets.Movement) end;

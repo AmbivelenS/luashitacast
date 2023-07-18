@@ -205,7 +205,7 @@ profile.HandleDefault = function()
         gearSet = profile.Sync
     end
 
-    if player.SubJob == 'NIN' then
+    if player.SubJob == 'BLU' then
         weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainDualWield)
     else
         weaponEquip = gFunc.Combine(gearSet.Idle, gearSet.mainOneHand)
