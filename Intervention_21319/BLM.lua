@@ -1,24 +1,42 @@
 local layers = gFunc.LoadFile('layers\\layers.lua')
 
+local macroBook = '2'
+local macroSet = '1'
+
+AshitaCore:GetChatManager():QueueCommand(1, '/macro book '.. macroBook);
+AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
+
+
+
+
 local combatMode = layers.CreateModeGroup('INT-MAB', {'INT', 'MAB'}, '@t')
+local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
+local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 
 layers.Sets.Idle = {
 
-    Head = "Blue Ribbon",
+    Head = "Seer's Crown +1",
     Body = "Baron's Saio",
-    Hands = "Seer's Mitts +1",
+    Hands = "Wizard's Gloves",
     Legs = "Seer's Slacks",
-    Feet = "Wonder Clomps",
+    Feet = "Wizard's Sabots",
     Neck = "Black Neckerchief",
     Waist = "Mantra Belt",
     Ammo = "Morion Tathlum",
+    Back = "Black Cape +1",
     Ear1 = "Morion Earring",
     Ear2 = "Moldavite Earring",
     Ring1 = "Eremite's Ring",
     Ring2 = "Eremite's Ring"
 
 }
+
+layers.Sets.Staves.Idle = {Main = 'Earth Staff'}
+layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
+
+
+layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 
 layers.Sets.Resting = {
     Main = "Dark Staff",
@@ -27,6 +45,8 @@ layers.Sets.Resting = {
 
 }
 
+layers.Sets.Midcast = {}
+layers.Sets.MAB.Midcast = {Head = "Bastokan Circlet"}
 
 layers.Sets.Midcast['Wind Enfeeblement'] = { Main = "Wind Staff" }
 layers.Sets.Midcast['Ice Enfeeblement'] = { Main = "Ice Staff" }
@@ -43,12 +63,6 @@ layers.Sets.Midcast['Fire Magic Damage'] = { Main = "Fire Staff" }
 layers.Sets.Midcast['Ice Magic Damage'] = { Main = "Ice Staff" }
 layers.Sets.Midcast['Thunder Magic Damage'] = { Main = "Thunder Staff" }
 
-layers.RegisterCallback("PostHandleMidcast", function(spell)
-    local player = gData.GetPlayer()
-    if (combatMode.current == "MAB") then
-        print(combatMode.current)
-        gFunc.Equip("Head", "Bastokan Circlet")
-    end
-end , "Midcast MAB Set")
+
 
 return layers
