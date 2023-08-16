@@ -27,8 +27,8 @@ layers.Sets.Idle = {
     Back = "Black Cape +1",
     Ear1 = "Morion Earring",
     Ear2 = "Moldavite Earring",
-    Ring1 = "Eremite's Ring",
-    Ring2 = "Eremite's Ring"
+    Ring1 = "Zircon Ring",
+    Ring2 = "Zircon Ring"
 
 }
 
