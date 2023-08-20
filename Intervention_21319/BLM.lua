@@ -16,8 +16,8 @@ local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 layers.Sets.Idle = {
 
-    Head = "Seer's Crown +1",
-    Body = "Baron's Saio",
+    Head = "Wizard's Petasos",
+    Body = "Justaucorps +1",
     Hands = "Wizard's Gloves",
     Legs = "Seer's Slacks",
     Feet = "Wizard's Sabots",
