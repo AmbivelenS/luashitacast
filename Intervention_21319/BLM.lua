@@ -45,9 +45,27 @@ layers.Sets.Resting = {
 
 }
 
+
+-- MidCast
+
 layers.Sets.Midcast = {}
+
+--Mode Mid Cast setup
 layers.Sets.MAB.Midcast = {Head = "Bastokan Circlet"}
 
+
+-- Setup base sets for specific spells
+layers.Sets.Midcast['Enfeebling'] = {
+        Body = 'Wizard\'s Coat'
+}
+
+layers.Sets.Midcast['Dark'] = {
+        Legs = 'Wizard\'s Tonban'
+}
+
+
+
+-- Staff related Enfeebling and Healing
 layers.Sets.Midcast['Wind Enfeeblement'] = { Main = "Wind Staff" }
 layers.Sets.Midcast['Ice Enfeeblement'] = { Main = "Ice Staff" }
 layers.Sets.Midcast['Dark Enfeeblement'] = { Main = "Dark Staff" }
@@ -55,7 +73,8 @@ layers.Sets.Midcast['Dark Enfeeblement'] = { Main = "Dark Staff" }
 layers.Sets.Midcast['Light Affinity'] = { Main = "Light Staff" }
 
 
-layers.Sets.Midcast['Dark Magic Damage'] = { Main = "Dark Staff" }
+-- Staff related Damage Spells
+layers.Sets.Midcast['Dark Affinity'] = { Main = "Dark Staff" }
 layers.Sets.Midcast['Earth Magic Damage'] = { Main = "Earth Staff" }
 layers.Sets.Midcast['Water Magic Damage'] = { Main = "Water Staff" }
 layers.Sets.Midcast['Wind Magic Damage'] = { Main = "Wind Staff" }

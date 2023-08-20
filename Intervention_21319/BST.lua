@@ -10,20 +10,22 @@ local weaponType = layers.CreateModeGroup('WeaponType', {'Axe', 'Club', 'Dagger'
 
 local weaponMode = layers.CreateModeGroup('Weapons', {'Shield', 'DualWield', 'Scythe'}, '@w')
 
+local meleeMode = layers.CreateModeGroup('MeleeMode', {'Off', 'STR', 'ACC'})
+
 local petMode = layers.CreateModeGroup('PetMode', {'Off', 'Pet'})
 
-local Axe = {Main = 'Pick of Trials'}
+local Axe = {Main = 'Martial Axe'}
 local Club = {Main = 'Warp Cudgel'}
 local Dagger = {Main = 'Triple Dagger'}
 local Warp = {Main = 'Warp Cudgel'}
 
-local mainHand = {Main = "Pick of Trials"}
+local mainHand = {Main = 'Martial Axe'}
 local offHand = {Sub = "Barbaroi Axe"}
 local offHandShield = {Sub = "Maple Shield"}
 local sycthe = {Main = "Goshisho's Scythe"}
 
 layers.Sets.Idle = {
-        Head = 'Celata',
+        Head = 'Wyvern Helm',
         Neck = 'Peacock Amulet',
         Ear1 = 'Spike Earring',
         Ear2 = 'Beastly Earring',
@@ -56,7 +58,7 @@ layers.Sets.Scythe.Idle = sycthe
 --Armor EquipSets
 
 layers.Sets.Engaged = {
-        Head = 'Celata',
+        Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
         Ear1 = 'Spike Earring',
         Ear2 = 'Beastly Earring',
@@ -70,20 +72,22 @@ layers.Sets.Engaged = {
 	}
 
 layers.Sets.Weaponskill ={
-        Head = 'Celata',
+        Head = 'Wyvern Helm',
         Neck = 'Spike Necklace',
         Ear1 = 'Spike Earring',
         Ear2 = 'Beastly Earring',
         Body = 'Haubergeon',
         Hands = 'Ogre Gloves',
-        Ring1 = 'Courage Ring',
+        Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Brave Belt',
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Wonder Clomps',
 }
 
+layers.Sets.STR.Weaponskill ={
 
+}
 
 
 layers.Sets.Ability['Charm'] = {
