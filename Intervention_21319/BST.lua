@@ -89,6 +89,14 @@ layers.Sets.STR.Weaponskill ={
 
 }
 
+layers.Sets.Ability['Reward'] ={
+        Body = "Monster Jackcoat",
+        Hands = 'Ogre Gloves',
+        Feet = 'Beast Gaiters',
+        Neck = 'Justice Badge',
+        Ring1 = 'Saintly Ring',
+        Ring2 = 'Saintly Ring',
+}
 
 layers.Sets.Ability['Charm'] = {
         Main = "Light Staff",
