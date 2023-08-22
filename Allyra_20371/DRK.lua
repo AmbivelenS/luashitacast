@@ -147,7 +147,7 @@ layers.Sets.Dark = {
         Waist = 'Swift Belt',
         Legs = 'Abyss Flanchard',
         Feet = 'Homam Gambieras',
-
+    }
 layers.Sets.Elemental = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
