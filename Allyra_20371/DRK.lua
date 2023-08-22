@@ -1,6 +1,34 @@
-local profile = {};
-local sets = {
-    ['Idle'] = {
+local layers = gFunc.LoadFile('layers\\layers.lua')
+
+local macroBook = '1'
+local macroSet = '1'
+
+AshitaCore:GetChatManager():QueueCommand(1, '/macro book '.. macroBook);
+AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
+
+
+layers.Sets.PDT = {
+        Ammo = 'Happy Egg',
+        Head = 'Optical Hat',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Coral Earring',
+        Ear2 = 'Optical Earring',
+        Body = 'Scorpion Harness',
+        Hands = 'Thick Mufflers',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
+        Back = 'Abyss Cape',
+        Waist = 'Swift Belt',
+        Legs = 'Abyss Flanchard',
+        Feet = 'Homam Gambieras',
+    },
+
+layers.Sets.Refresh = {
+        Neck = 'Parade Gorget',
+
+}
+
+layers.Sets.Idle = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
         Neck = 'Parade Gorget',
@@ -14,8 +42,9 @@ local sets = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
-    ['TP'] = {
+    }
+
+layers.Sets.Engaged = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
@@ -29,8 +58,9 @@ local sets = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
-    ['WS'] = {
+    }
+
+layers.Sets.Weaponskill ={
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
@@ -44,8 +74,9 @@ local sets = {
         Waist = 'Life Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
-    ['Souleater'] = {
+}
+
+layers.Sets.Ability['Souleater'] = {
         Ammo = 'Happy Egg',
         Head = 'Chaos Burgeonet',
         Neck = 'Peacock Amulet',
@@ -60,22 +91,7 @@ local sets = {
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
     },
-    ['LastResort'] = {
-        Ammo = 'Happy Egg',
-        Head = 'Optical Hat',
-        Neck = 'Peacock Amulet',
-        Ear1 = 'Coral Earring',
-        Ear2 = 'Optical Earring',
-        Body = 'Scorpion Harness',
-        Hands = 'Thick Mufflers',
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Jaeger Ring',
-        Back = 'Abyss Cape',
-        Waist = 'Swift Belt',
-        Legs = 'Black Cuisses',
-        Feet = 'Abyss Sollerets',
-    },
-    ['WeaponBash'] = {
+layers.Sets.Ability['WeaponBash'] = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
@@ -89,8 +105,18 @@ local sets = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
-    ['ArcaneCircle'] = {
+}
+layers.Sets.Ability['Reward'] ={
+        Body = "Monster Jackcoat",
+        Hands = 'Ogre Gloves',
+        Feet = 'Beast Gaiters',
+        Neck = 'Justice Badge',
+        Ring1 = 'Saintly Ring',
+        Ring2 = 'Saintly Ring',
+}
+
+
+layers.Sets.Ability['ArcaneCircle'] = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
@@ -105,52 +131,9 @@ local sets = {
         Legs = 'Black Cuisses',
         Feet = 'Chaos Sollerets',
     },
-    ['Asleep'] = {
-        Ammo = 'Happy Egg',
-        Head = 'Optical Hat',
-        Neck = 'Opo-opo Necklace',
-        Ear1 = 'Coral Earring',
-        Ear2 = 'Optical Earring',
-        Body = 'Scorpion Harness',
-        Hands = 'Thick Mufflers',
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Jaeger Ring',
-        Back = 'Abyss Cape',
-        Waist = 'Swift Belt',
-        Legs = 'Black Cuisses',
-        Feet = 'Homam Gambieras',
-    },
-    ['Refresh'] = {
-        Ammo = 'Happy Egg',
-        Head = 'Optical Hat',
-        Neck = 'Parade Gorget',
-        Ear1 = 'Coral Earring',
-        Ear2 = 'Optical Earring',
-        Body = 'Scorpion Harness',
-        Hands = 'Thick Mufflers',
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Jaeger Ring',
-        Back = 'Abyss Cape',
-        Waist = 'Swift Belt',
-        Legs = 'Black Cuisses',
-        Feet = 'Homam Gambieras',
-    },
-    ['Absorb'] = {
-        Ammo = 'Happy Egg',
-        Head = 'Chaos Burgeonet',
-        Neck = 'Peacock Amulet',
-        Ear1 = 'Coral Earring',
-        Ear2 = 'Optical Earring',
-        Body = 'Scorpion Harness',
-        Hands = 'Thick Mufflers',
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Jaeger Ring',
-        Back = 'Abyss Cape',
-        Waist = 'Swift Belt',
-        Legs = 'Black Cuisses',
-        Feet = 'Homam Gambieras',
-    },
-    ['BioDrainAspir'] = {
+
+
+layers.Sets.Dark = {
         Ammo = 'Happy Egg',
         Head = 'Chaos Burgeonet',
         Neck = 'Peacock Amulet',
@@ -164,8 +147,24 @@ local sets = {
         Waist = 'Swift Belt',
         Legs = 'Abyss Flanchard',
         Feet = 'Homam Gambieras',
+
+layers.Sets.Elemental = {
+        Ammo = 'Happy Egg',
+        Head = 'Optical Hat',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Coral Earring',
+        Ear2 = 'Optical Earring',
+        Body = 'Scorpion Harness',
+        Hands = 'Thick Mufflers',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
+        Back = 'Abyss Cape',
+        Waist = 'Swift Belt',
+        Legs = 'Black Cuisses',
+        Feet = 'Homam Gambieras',
     },
-    ['Enfeebling'] = {
+
+layers.Sets.Enfeebling = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
@@ -180,9 +179,10 @@ local sets = {
         Legs = 'Abyss Flanchard',
         Feet = 'Abyss Sollerets',
     },
-    ['Elemental'] = {
+
+layers.Sets.AbsorbStat = {
         Ammo = 'Happy Egg',
-        Head = 'Optical Hat',
+        Head = 'Chaos Burgeonet',
         Neck = 'Peacock Amulet',
         Ear1 = 'Coral Earring',
         Ear2 = 'Optical Earring',
@@ -195,59 +195,16 @@ local sets = {
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
     },
-    ['Defense'] = {
-        Ammo = 'Happy Egg',
-        Head = 'Optical Hat',
-        Neck = 'Peacock Amulet',
-        Ear1 = 'Coral Earring',
-        Ear2 = 'Optical Earring',
-        Body = 'Scorpion Harness',
-        Hands = 'Thick Mufflers',
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Jaeger Ring',
-        Back = 'Abyss Cape',
-        Waist = 'Swift Belt',
-        Legs = 'Abyss Flanchard',
-        Feet = 'Homam Gambieras',
-    },
-};
-profile.Sets = sets;
 
-profile.Packer = {
-};
+layers.Sets.Midcast['Dark Affinity'] = layers.Sets.Dark
 
-profile.OnLoad = function()
-    gSettings.AllowAddSet = true;
-end
+layers.Sets.Midcast["Elemental"] = layers.Sets.Elemental
 
-profile.OnUnload = function()
-end
+layers.Sets.Midcast['Enfeebling'] = layers.Sets.Enfeebling
 
-profile.HandleCommand = function(args)
-end
+layers.Sets.Midcast["Absorb-Stat"] = layers.Sets.AbsorbStat
 
-profile.HandleDefault = function()
-end
 
-profile.HandleAbility = function()
-end
 
-profile.HandleItem = function()
-end
 
-profile.HandlePrecast = function()
-end
-
-profile.HandleMidcast = function()
-end
-
-profile.HandlePreshot = function()
-end
-
-profile.HandleMidshot = function()
-end
-
-profile.HandleWeaponskill = function()
-end
-
-return profile;
+return layers
