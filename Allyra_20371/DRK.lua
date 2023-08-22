@@ -21,7 +21,7 @@ layers.Sets.PDT = {
         Waist = 'Swift Belt',
         Legs = 'Abyss Flanchard',
         Feet = 'Homam Gambieras',
-    },
+    }
 
 layers.Sets.Refresh = {
         Neck = 'Parade Gorget',
@@ -90,7 +90,7 @@ layers.Sets.Ability['Souleater'] = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
+    }
 layers.Sets.Ability['WeaponBash'] = {
         Ammo = 'Happy Egg',
         Head = 'Optical Hat',
@@ -130,7 +130,7 @@ layers.Sets.Ability['ArcaneCircle'] = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Chaos Sollerets',
-    },
+    }
 
 
 layers.Sets.Dark = {
@@ -162,7 +162,7 @@ layers.Sets.Elemental = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
+    }
 
 layers.Sets.Enfeebling = {
         Ammo = 'Happy Egg',
@@ -178,7 +178,7 @@ layers.Sets.Enfeebling = {
         Waist = 'Swift Belt',
         Legs = 'Abyss Flanchard',
         Feet = 'Abyss Sollerets',
-    },
+    }
 
 layers.Sets.AbsorbStat = {
         Ammo = 'Happy Egg',
@@ -194,7 +194,7 @@ layers.Sets.AbsorbStat = {
         Waist = 'Swift Belt',
         Legs = 'Black Cuisses',
         Feet = 'Homam Gambieras',
-    },
+    }
 
 layers.Sets.Midcast['Dark Affinity'] = layers.Sets.Dark
 
@@ -203,7 +203,6 @@ layers.Sets.Midcast["Elemental"] = layers.Sets.Elemental
 layers.Sets.Midcast['Enfeebling'] = layers.Sets.Enfeebling
 
 layers.Sets.Midcast["Absorb-Stat"] = layers.Sets.AbsorbStat
-
 
 
 
