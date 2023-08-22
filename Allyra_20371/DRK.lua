@@ -12,8 +12,8 @@ local refreshBody = layers.CreateModeGroup('RefreshBody', {'Off', 'RBody'}, '@2'
 
 layers.Sets.RGorget.Idle = {Neck = 'Parade Gorget',}
 layers.Sets.Rbody.Idle = {Body = 'Vampire Cloak',}
-layers.Sets.RGorget.Engaged = {Neck = 'Parade Gorget',}
-layers.Sets.Rbody.Engaged = {Body = 'Vampire Cloak',}
+-- layers.Sets.RGorget.Engaged = {Neck = 'Parade Gorget',}
+-- layers.Sets.Rbody.Engaged = {Body = 'Vampire Cloak',}
 
 layers.Sets.PDT = {
         Ammo = 'Happy Egg',
