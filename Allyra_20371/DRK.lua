@@ -6,6 +6,14 @@ local macroSet = '1'
 AshitaCore:GetChatManager():QueueCommand(1, '/macro book '.. macroBook);
 AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 
+local refreshGorget = layers.CreateModeGroup('RefreshGorget', {'Off', 'RGorget'}, '@1')
+
+local refreshBody = layers.CreateModeGroup('RefreshBody', {'Off', 'RBody'}, '@2')
+
+layers.Sets.RGorget.Idle = {Neck = 'Parade Gorget',}
+layers.Sets.Rbody.Idle = {Body = 'Vampire Cloak',}
+layers.Sets.RGorget.Engaged = {Neck = 'Parade Gorget',}
+layers.Sets.Rbody.Engaged = {Body = 'Vampire Cloak',}
 
 layers.Sets.PDT = {
         Ammo = 'Happy Egg',
@@ -95,6 +103,7 @@ layers.Sets.Midcast["Elemental"] = layers.Sets.Elemental
 layers.Sets.Midcast['Enfeebling'] = layers.Sets.Enfeebling
 
 layers.Sets.Midcast["Absorb-Stat"] = layers.Sets.AbsorbStat
+
 
 
 
