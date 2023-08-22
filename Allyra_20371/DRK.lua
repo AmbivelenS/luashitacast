@@ -72,18 +72,22 @@ layers.Sets.Ability['Souleater'] = {
     }
 layers.Sets.Ability['Weapon Bash'] = {
         Hands = 'Chaos Gauntlets',
+        Body = 'Scorpion Harness',
     }
 
 layers.Sets.Ability['Arcane Circle'] = {
         Feet = 'Chaos Sollerets',
+        Body = 'Scorpion Harness',
     }
 layers.Sets.Ability['Last Resort'] = {
-        Feet = 'Abyss Sollerets', 
+        Feet = 'Abyss Sollerets',
+        Body = 'Scorpion Harness', 
     }
 
 layers.Sets.Dark = {
         Head = 'Chaos Burgeonet',
         Legs = 'Abyss Flanchard',
+        Body = 'Scorpion Harness',
     }
 layers.Sets.Elemental = {
 
@@ -97,6 +101,7 @@ layers.Sets.Enfeebling = {
 layers.Sets.AbsorbStat = {
         Head = 'Chaos Burgeonet',
         Legs = 'Black Cuisses',
+        Body = 'Scorpion Harness',
     }
 
 layers.Sets.Midcast['Dark Affinity'] = layers.Sets.Dark
