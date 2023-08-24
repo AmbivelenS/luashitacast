@@ -98,7 +98,7 @@ layers.Sets.Elemental = {
 
     }
 
-layers.Sets.Midshot
+layers.Sets.Midshot = {
     Ring1 = 'Scorpion Ring',
     Ring2 = 'Scorpion Ring',
 
