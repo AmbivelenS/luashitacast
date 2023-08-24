@@ -10,10 +10,15 @@ local refreshGorget = layers.CreateModeGroup('RefreshGorget', {'Off', 'RGorget'}
 
 local refreshBody = layers.CreateModeGroup('RefreshBody', {'Off', 'RBody'}, '@2')
 
+local sleepNeck = layers.CreateModeGroup('SleepNeck', {'Off', 'SNeck'}, '@3')
+
+
 layers.Sets.RGorget.Idle = {Neck = 'Parade Gorget',}
 layers.Sets.RBody.Idle = {
         Head = '',
         Body = 'Vampire Cloak',}
+layers.Sets.SNeck.Idle = {Neck = 'Opo-opo Necklace',}
+
 layers.Sets.RGorget.Engaged = {Neck = 'Parade Gorget',}
 layers.Sets.RBody.Engaged = {
         Head = '',
@@ -90,6 +95,12 @@ layers.Sets.Dark = {
         Body = 'Scorpion Harness',
     }
 layers.Sets.Elemental = {
+
+    }
+
+layers.Sets.Midshot
+    Ring1 = 'Scorpion Ring',
+    Ring2 = 'Scorpion Ring',
 
     }
 
