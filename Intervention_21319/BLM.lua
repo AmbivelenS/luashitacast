@@ -80,7 +80,7 @@ layers.Sets.Midcast['Water Magic Damage'] = { Main = "Water Staff" }
 layers.Sets.Midcast['Wind Magic Damage'] = { Main = "Wind Staff" }
 layers.Sets.Midcast['Fire Magic Damage'] = { Main = "Fire Staff" }
 layers.Sets.Midcast['Ice Magic Damage'] = { Main = "Ice Staff" }
-layers.Sets.Midcast['Thunder Magic Damage'] = { Main = "Thunder Staff" }
+layers.Sets.Midcast['Lightning Magic Damage'] = { Main = "Thunder Staff" }
 
 
 
