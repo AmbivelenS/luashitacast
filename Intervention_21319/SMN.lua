@@ -41,7 +41,7 @@ layers.Sets.PetIdle['Wind Affinity'] = { Main = "Wind Staff" }
 layers.Sets.PetIdle['Fire Affinity'] = { Main = "Fire Staff" }
 layers.Sets.PetIdle['Ice Affinity'] = { Main = "Ice Staff" }
 layers.Sets.PetIdle['Lightning Affinity'] = { Main = "Thunder Staff" }
-
+layers.Sets.PetIdle['Carbuncle'] = {Hands = 'Carbcunle Mitts'}
 
 layers.Sets.PetEngaged = layers.Sets.PetIdle
 
