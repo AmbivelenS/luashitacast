@@ -9,15 +9,15 @@ AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 
 
 
-local combatMode = layers.CreateModeGroup('INT-MAB', {'INT', 'MAB'}, '@t')
+local combatMode = layers.CreateModeGroup('Ele-MAB', {'ELE', 'MAB'}, '@t')
 local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 
 layers.Sets.Idle = {
 
-    Head = "Wizard's Petasos",
-    Body = "Justaucorps +1",
+    Head = "",
+    Body = "Black Cloak",
     Hands = "Wizard's Gloves",
     Legs = "Seer's Slacks",
     Feet = "Wizard's Sabots",
@@ -50,12 +50,27 @@ layers.Sets.Resting = {
 
 layers.Sets.Midcast = {}
 
+
+layers.Sets.ELE.Midcast
+
 --Mode Mid Cast setup
-layers.Sets.MAB.Midcast = {Head = "Bastokan Circlet"}
+layers.Sets.ELE.Midcast = {
+    Head = "Wizard's Petasos",
+    Neck = 'Elemental Torque'
+}
+layers.Sets.MAB.Midcast = {
+    Head = "Bastokan Circlet"
+}
+
 
 
 -- Setup base sets for specific spells
+layers.Sets.Midcast['Elemental'] = {
+        Body = "Justaucorps +1", 
+}
+
 layers.Sets.Midcast['Enfeebling'] = {
+        Head = "Wizard's Petasos",    
         Body = 'Wizard\'s Coat'
 }
 
@@ -69,6 +84,9 @@ layers.Sets.Midcast['Dark'] = {
 layers.Sets.Midcast['Wind Enfeeblement'] = { Main = "Wind Staff" }
 layers.Sets.Midcast['Ice Enfeeblement'] = { Main = "Ice Staff" }
 layers.Sets.Midcast['Dark Enfeeblement'] = { Main = "Dark Staff" }
+-- Stun
+layers.Sets.Midcast['Lightning Enfeeblement'] = { Main = "Thunder Staff" }
+
 
 layers.Sets.Midcast['Light Affinity'] = { Main = "Light Staff" }
 
