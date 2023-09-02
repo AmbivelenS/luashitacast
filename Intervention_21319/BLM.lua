@@ -51,7 +51,6 @@ layers.Sets.Resting = {
 layers.Sets.Midcast = {}
 
 
-layers.Sets.ELE.Midcast
 
 --Mode Mid Cast setup
 layers.Sets.ELE.Midcast = {
