@@ -58,8 +58,8 @@ layers.Sets.Low.Midcast = {
     Neck = "Black Neckerchief",
 }
 layers.Sets.High.Midcast = {
-    Head = "Wizard's Petasos"
-    Neck = 'Elemental Torque'   
+    Head = "Wizard's Petasos",
+    Neck = 'Elemental Torque',  
 }
 
 
