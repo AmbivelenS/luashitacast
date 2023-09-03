@@ -33,10 +33,7 @@ layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
 
 --Staff Logic
 
-layers.Sets.PetIdle['Carbuncle'] = {
-	Main = "Light Staff",
-	Hands = 'Carbcunle Mitts'
-}
+layers.Sets.PetIdle['Light Affinity'] = { }
 layers.Sets.PetIdle['Dark Affinity'] = { Main = "Dark Staff" }
 layers.Sets.PetIdle['Earth Affinity'] = { Main = "Earth Staff" }
 layers.Sets.PetIdle['Water Affinity'] = { Main = "Water Staff" }
@@ -44,7 +41,7 @@ layers.Sets.PetIdle['Wind Affinity'] = { Main = "Wind Staff" }
 layers.Sets.PetIdle['Fire Affinity'] = { Main = "Fire Staff" }
 layers.Sets.PetIdle['Ice Affinity'] = { Main = "Ice Staff" }
 layers.Sets.PetIdle['Lightning Affinity'] = { Main = "Thunder Staff" }
-
+layers.Sets.PetIdle['Carbuncle'] = {Hands = 'Carbuncle Mitts'}
 
 layers.Sets.PetEngaged = layers.Sets.PetIdle
 
