@@ -9,7 +9,7 @@ AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 
 
 
-local combatMode = layers.CreateModeGroup('Ele-MAB', {'ELE', 'MAB'}, '@t')
+local combatMode = layers.CreateModeGroup('Resist', {'Low', 'High'}, '@t')
 local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
@@ -53,12 +53,13 @@ layers.Sets.Midcast = {}
 
 
 --Mode Mid Cast setup
-layers.Sets.ELE.Midcast = {
+layers.Sets.Low.Midcast = {
     Head = "Wizard's Petasos",
-    Neck = 'Elemental Torque'
+    Neck = "Black Neckerchief",
 }
-layers.Sets.MAB.Midcast = {
-    Head = "Bastokan Circlet"
+layers.Sets.High.Midcast = {
+    Head = "Wizard's Petasos"
+    Neck = 'Elemental Torque'   
 }
 
 
