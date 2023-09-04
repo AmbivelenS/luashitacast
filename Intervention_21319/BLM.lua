@@ -55,10 +55,12 @@ layers.Sets.Midcast = {}
 --Mode Mid Cast setup
 layers.Sets.Low.Midcast = {
     Head = "Wizard's Petasos",
+    Body = "Justaucorps +1", 
     Neck = "Black Neckerchief",
 }
 layers.Sets.High.Midcast = {
     Head = "Wizard's Petasos",
+    Body = "Justaucorps +1", 
     Neck = 'Elemental Torque',  
 }
 
@@ -66,12 +68,15 @@ layers.Sets.High.Midcast = {
 
 -- Setup base sets for specific spells
 layers.Sets.Midcast['Elemental'] = {
-        Body = "Justaucorps +1", 
+         
 }
 
 layers.Sets.Midcast['Enfeebling'] = {
         Head = "Wizard's Petasos",    
         Body = 'Wizard\'s Coat'
+}
+
+layers.Sets.Midcast['Enhancing'] ={
 }
 
 layers.Sets.Midcast['Dark'] = {

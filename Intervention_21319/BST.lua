@@ -10,7 +10,7 @@ local weaponType = layers.CreateModeGroup('WeaponType', {'Axe', 'Club', 'Dagger'
 
 local weaponMode = layers.CreateModeGroup('Weapons', {'Shield', 'DualWield', 'Scythe'}, '@w')
 
-local meleeMode = layers.CreateModeGroup('MeleeMode', {'Off', 'STR', 'ACC'})
+local meleeMode = layers.CreateModeGroup('MeleeMode', {'Haste','ACC', 'STR'}, '@m')
 
 local petMode = layers.CreateModeGroup('PetMode', {'Off', 'Pet'})
 
@@ -22,7 +22,7 @@ local Warp = {Main = 'Warp Cudgel'}
 local mainHand = {Main = 'Martial Axe'}
 local offHand = {Sub = "Barbaroi Axe"}
 local offHandShield = {Sub = "Maple Shield"}
-local sycthe = {Main = "Scarecrow Scythe"}
+local Scythe = {Main = "Scarecrow Scythe"}
 
 layers.Sets.Idle = {
         Head = 'Wyvern Helm',
@@ -52,12 +52,27 @@ layers.Sets.Shield.Idle = offHandShield
 
 layers.Sets.DualWield.Idle = offHand
 
-layers.Sets.Scythe.Idle = sycthe
+layers.Sets.Scythe.Idle = Scythe
 
 
 --Armor EquipSets
 
-layers.Sets.Engaged = {
+layers.Sets.Haste.Engaged = {
+        Head = 'Panther Mask',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Brutal Earring',
+        Ear2 = 'Beastly Earring',
+        Body = 'Haubergeon',
+        Hands = 'Thick Mufflers',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
+        Waist = 'Swift Belt',
+        Legs = 'Ryl.Kgt. Breeches',
+        Feet = 'Thick Sollerets',
+        }
+
+
+layers.Sets.ACC.Engaged = {
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
         Ear1 = 'Brutal Earring',
@@ -70,6 +85,20 @@ layers.Sets.Engaged = {
         Legs = 'Ryl.Kgt. Breeches',
         Feet = 'Thick Sollerets',
 	}
+
+layers.Sets.STR.Engaged = {
+        Head = 'Wyvern Helm',
+        Neck = 'Spike Necklace',
+        Ear1 = 'Brutal Earring',
+        Ear2 = 'Beastly Earring',
+        Body = 'Haubergeon',
+        Hands = 'Ogre Gloves',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Courage Ring',
+        Waist = 'Swift Belt',
+        Legs = 'Ryl.Kgt. Breeches',
+        Feet = 'Wonder Clomps',
+        }
 
 layers.Sets.Weaponskill ={
         Head = 'Wyvern Helm',
@@ -85,9 +114,23 @@ layers.Sets.Weaponskill ={
         Feet = 'Wonder Clomps',
 }
 
-layers.Sets.STR.Weaponskill ={
+layers.Sets.Haste.Weaponskill = layers.Sets.Weaponskill
+layers.Sets.STR.Weaponskill = layers.Sets.Weaponskill
 
+layers.Sets.ACC.Weaponskill = {
+        Head = 'Optical Hat',
+        Neck = 'Peacock Amulet',
+        Ear1 = 'Brutal Earring',
+        Ear2 = 'Beastly Earring',
+        Body = 'Haubergeon',
+        Hands = 'Thick Mufflers',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
+        Waist = 'Brave Belt',
+        Legs = 'Ryl.Kgt. Breeches',
+        Feet = 'Thick Sollerets',
 }
+
 
 layers.Sets.Ability['Reward'] ={
         Body = "Monster Jackcoat",
