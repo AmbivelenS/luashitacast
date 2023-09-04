@@ -93,6 +93,7 @@ layers.Sets.Dark = {
         Head = 'Chaos Burgeonet',
         Legs = 'Abyss Flanchard',
         Body = 'Scorpion Harness',
+        Hands = 'Abyss Gauntlets',
     }
 layers.Sets.Elemental = {
 
@@ -107,12 +108,14 @@ layers.Sets.Midshot = {
 layers.Sets.Enfeebling = {
         Body = 'Chaos Cuirass',
         Feet = 'Abyss Sollerets',
+        Hands = 'Abyss Gauntlets',
     }
 
 layers.Sets.AbsorbStat = {
         Head = 'Chaos Burgeonet',
         Legs = 'Black Cuisses',
         Body = 'Scorpion Harness',
+        Hands = 'Abyss Gauntlets',
     }
 
 layers.Sets.Midcast['Dark Affinity'] = layers.Sets.Dark
