@@ -22,12 +22,12 @@ local Warp = {Main = 'Warp Cudgel'}
 local mainHand = {Main = 'Martial Axe'}
 local offHand = {Sub = "Barbaroi Axe"}
 local offHandShield = {Sub = "Maple Shield"}
-local sycthe = {Main = "Goshisho's Scythe"}
+local sycthe = {Main = "Scarecrow Scythe"}
 
 layers.Sets.Idle = {
         Head = 'Wyvern Helm',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Spike Earring',
+        Ear1 = 'Brutal Earring',
         Ear2 = 'Beastly Earring',
         Body = 'Haubergeon',
         Back = 'Amemet Mantle',
@@ -60,7 +60,7 @@ layers.Sets.Scythe.Idle = sycthe
 layers.Sets.Engaged = {
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
-        Ear1 = 'Spike Earring',
+        Ear1 = 'Brutal Earring',
         Ear2 = 'Beastly Earring',
         Body = 'Haubergeon',
         Hands = 'Thick Mufflers',
@@ -74,7 +74,7 @@ layers.Sets.Engaged = {
 layers.Sets.Weaponskill ={
         Head = 'Wyvern Helm',
         Neck = 'Spike Necklace',
-        Ear1 = 'Spike Earring',
+        Ear1 = 'Brutal Earring',
         Ear2 = 'Beastly Earring',
         Body = 'Haubergeon',
         Hands = 'Ogre Gloves',
