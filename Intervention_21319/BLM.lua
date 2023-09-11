@@ -19,7 +19,7 @@ layers.Sets.Idle = {
     Head = "",
     Body = "Black Cloak",
     Hands = "Wizard's Gloves",
-    Legs = "Seer's Slacks",
+    Legs = "Errant Slops",
     Feet = "Wizard's Sabots",
     Neck = "Black Neckerchief",
     Waist = "Mantra Belt",
@@ -40,7 +40,7 @@ layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 
 layers.Sets.Resting = {
     Main = "Dark Staff",
-    Body = "Seer's Tunic",
+    Body = "Errant Hpl.",
     Legs = "Baron's Slops",
 
 }
@@ -53,34 +53,48 @@ layers.Sets.Midcast = {}
 
 
 --Mode Mid Cast setup
-layers.Sets.Low.Midcast = {
+layers.Sets.Low.Midcast['Elemental'] = {
     Head = "Wizard's Petasos",
-    Body = "Justaucorps +1", 
+    Body = "Errant Hpl.",
+    Hands = "Errant Cuffs",
     Neck = "Black Neckerchief",
 }
-layers.Sets.High.Midcast = {
+layers.Sets.High.Midcast['Elemental'] = {
     Head = "Wizard's Petasos",
-    Body = "Justaucorps +1", 
+    Body = "Errant Hpl.",
+    Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
 }
 
 
 
 -- Setup base sets for specific spells
-layers.Sets.Midcast['Elemental'] = {
-         
-}
 
 layers.Sets.Midcast['Enfeebling'] = {
-        Head = "Wizard's Petasos",    
-        Body = 'Wizard\'s Coat'
+    Head = "Wizard's Petasos",    
+    Body = 'Wizard\'s Coat',
+
 }
 
 layers.Sets.Midcast['Enhancing'] ={
 }
 
+layers.Sets.Midcast['Stoneskin'] ={
+    Main = "Water Staff",
+    Head = "Traveler's Hat",
+    Body = "Errant Hpl.",
+    Hands = "Errant Cuffs",
+    Legs = "Errant Slops",
+    Feet = "Errant Pigaches",
+    Neck = "Justice Badge",
+    Ring1 = "Saintly Ring",
+    Ring2 = "Saintly Ring",
+
+
+}
+
 layers.Sets.Midcast['Dark'] = {
-        Legs = 'Wizard\'s Tonban'
+    Legs = 'Wizard\'s Tonban'
 }
 
 
