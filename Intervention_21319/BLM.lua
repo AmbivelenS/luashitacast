@@ -66,6 +66,18 @@ layers.Sets.High.Midcast['Elemental'] = {
     Neck = 'Elemental Torque',  
 }
 
+layers.Sets.Low.Midcast['Elemental Enfeebling'] = {
+    Head = "Wizard's Petasos",
+    Body = "Errant Hpl.",
+    Hands = "Errant Cuffs",
+    Neck = "Black Neckerchief",
+}
+layers.Sets.High.Midcast['Elemental Enfeebling'] = {
+    Head = "Wizard's Petasos",
+    Body = "Errant Hpl.",
+    Hands = "Wizard's Gloves",
+    Neck = 'Elemental Torque',  
+}
 
 
 -- Setup base sets for specific spells
@@ -75,6 +87,8 @@ layers.Sets.Midcast['Enfeebling'] = {
     Body = 'Wizard\'s Coat',
 
 }
+
+
 
 layers.Sets.Midcast['Enhancing'] ={
 }
