@@ -55,7 +55,7 @@ layers.Sets.Midcast = {}
 --Mode Mid Cast setup
 layers.Sets.Low.Midcast['Elemental'] = {
     Head = "Wizard's Petasos",
-    Body = "Errant Hpl.",
+    Body = "Igqira Weskit",
     Hands = "Errant Cuffs",
     Neck = "Black Neckerchief",
 }
