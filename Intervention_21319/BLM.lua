@@ -53,18 +53,23 @@ layers.Sets.Midcast = {}
 
 
 --Mode Mid Cast setup
-layers.Sets.Low.Midcast['Elemental'] = {
+layers.Sets.Low.Midcast['Single Target Elemental'] = {
     Head = "Wizard's Petasos",
     Body = "Igqira Weskit",
     Hands = "Errant Cuffs",
     Neck = "Black Neckerchief",
 }
-layers.Sets.High.Midcast['Elemental'] = {
+layers.Sets.High.Midcast['Single Target Elemental'] = {
     Head = "Wizard's Petasos",
     Body = "Errant Hpl.",
     Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
 }
+
+layers.Sets.Low.Midcast['Ga'] = layers.Sets.Low.Midcast['Single Target Elemental']
+
+layers.Sets.Low.Midcast['Ga'] = layers.Sets.High.Midcast['Single Target Elemental']
+
 
 layers.Sets.Low.Midcast['Elemental Enfeebling'] = {
     Head = "Wizard's Petasos",
