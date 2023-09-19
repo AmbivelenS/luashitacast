@@ -22,8 +22,8 @@ layers.Sets.Idle = {
 }
 
 layers.Sets.Resting = {
-    Main = "",
-    Body = "",
+    Main = "Dark Staff",
+    Body = "Seer's Tunic +1",
     Legs = "",
 
 }
@@ -33,15 +33,41 @@ layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
 
 --Staff Logic
 
-layers.Sets.PetIdle['Light Affinity'] = { }
-layers.Sets.PetIdle['Dark Affinity'] = { Main = "Dark Staff" }
-layers.Sets.PetIdle['Earth Affinity'] = { Main = "Earth Staff" }
-layers.Sets.PetIdle['Water Affinity'] = { Main = "Water Staff" }
-layers.Sets.PetIdle['Wind Affinity'] = { Main = "Wind Staff" }
-layers.Sets.PetIdle['Fire Affinity'] = { Main = "Fire Staff" }
-layers.Sets.PetIdle['Ice Affinity'] = { Main = "Ice Staff" }
-layers.Sets.PetIdle['Lightning Affinity'] = { Main = "Thunder Staff" }
-layers.Sets.PetIdle['Carbuncle'] = {Hands = 'Carbuncle Mitts'}
+layers.Sets.PetIdle['Light Affinity'] = { 
+    Main = "Kukulcan's Staff",
+    Hands = "Carbuncle's Mitts"  }
+
+layers.Sets.PetIdle['Dark Affinity'] = { 
+    Main = "Dark Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Earth Affinity'] = { 
+    Main = "Earth Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Water Affinity'] = { 
+    Main = "Water Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Wind Affinity'] = { 
+    Main = "Wind Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Fire Affinity'] = { 
+    Main = "Fire Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Ice Affinity'] = { 
+    Main = "Ice Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Lightning Affinity'] = { 
+    Main = "Thunder Staff",
+    Hands = "Evoker's Bracers" }
+
+layers.Sets.PetIdle['Carbuncle'] = {
+    Main = "Kukulcan's Staff",
+    Hands = "Carbuncle Mitts" }
 
 layers.Sets.PetEngaged = layers.Sets.PetIdle
 
