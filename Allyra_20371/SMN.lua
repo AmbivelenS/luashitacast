@@ -6,7 +6,7 @@ local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
 layers.Sets.Idle = {
 
     Head = "",
-    Body = "",
+    Body = "Austere Robe",
     Hands = "",
     Legs = "",
     Feet = "",
