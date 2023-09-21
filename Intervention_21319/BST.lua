@@ -110,7 +110,7 @@ layers.Sets.Weaponskill ={
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Brave Belt',
-        Legs = 'Ryl.Kgt. Breeches',
+        Legs = 'Bst. Trousers +1',
         Feet = 'Wonder Clomps',
 }
 
