@@ -31,12 +31,12 @@ layers.Sets.Idle = {
         Ear2 = 'Beastly Earring',
         Body = 'Haubergeon',
         Back = 'Amemet Mantle',
-        Hands = 'Thick Mufflers',
+        Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
         Waist = 'Swift Belt',
-        Legs = 'Ryl.Kgt. Breeches',
-        Feet = 'Thick Sollerets',
+        Legs = "Byakko's Haidate" ,
+        Feet = 'Adaman Sollerets',
     }
 
 --Setting Variables for Weaponsets
@@ -67,8 +67,8 @@ layers.Sets.Haste.Engaged = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
         Waist = 'Swift Belt',
-        Legs = 'Ryl.Kgt. Breeches',
-        Feet = 'Thick Sollerets',
+        Legs = "Byakko's Haidate" ,
+        Feet = 'Adaman Sollerets',
         }
 
 
@@ -82,8 +82,8 @@ layers.Sets.ACC.Engaged = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
         Waist = 'Swift Belt',
-        Legs = 'Ryl.Kgt. Breeches',
-        Feet = 'Thick Sollerets',
+        Legs = "Byakko's Haidate",
+        Feet = 'Adaman Sollerets',
 	}
 
 layers.Sets.STR.Engaged = {
@@ -96,7 +96,7 @@ layers.Sets.STR.Engaged = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Swift Belt',
-        Legs = 'Ryl.Kgt. Breeches',
+        Legs = "Byakko's Haidate",
         Feet = 'Wonder Clomps',
         }
 
@@ -110,7 +110,7 @@ layers.Sets.Weaponskill ={
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Brave Belt',
-        Legs = 'Ryl.Kgt. Breeches',
+        Legs = 'Bst. Trousers +1',
         Feet = 'Wonder Clomps',
 }
 
@@ -127,8 +127,8 @@ layers.Sets.ACC.Weaponskill = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
         Waist = 'Brave Belt',
-        Legs = 'Ryl.Kgt. Breeches',
-        Feet = 'Thick Sollerets',
+        Legs = "Byakko's Haidate",
+        Feet = 'Adaman Sollerets',
 }
 
 

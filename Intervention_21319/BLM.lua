@@ -21,7 +21,7 @@ layers.Sets.Idle = {
     Hands = "Wizard's Gloves",
     Legs = "Errant Slops",
     Feet = "Wizard's Sabots",
-    Neck = "Black Neckerchief",
+    Neck = "Philomath Stole",
     Waist = "Mantra Belt",
     Ammo = "Morion Tathlum",
     Back = "Black Cape +1",
@@ -57,11 +57,11 @@ layers.Sets.Low.Midcast['Single Target Elemental'] = {
     Head = "Wizard's Petasos",
     Body = "Igqira Weskit",
     Hands = "Errant Cuffs",
-    Neck = "Black Neckerchief",
+    Neck = "Philomath Stole",
 }
 layers.Sets.High.Midcast['Single Target Elemental'] = {
     Head = "Wizard's Petasos",
-    Body = "Errant Hpl.",
+    Body = "Igqira Weskit",
     Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
 }
@@ -75,7 +75,7 @@ layers.Sets.Low.Midcast['Enfeebling Elemental'] = {
     Head = "Wizard's Petasos",
     Body = "Errant Hpl.",
     Hands = "Errant Cuffs",
-    Neck = "Black Neckerchief",
+    Neck = "Philomath Stole",
 }
 layers.Sets.High.Midcast['Enfeebling Elemental'] = {
     Head = "Wizard's Petasos",
