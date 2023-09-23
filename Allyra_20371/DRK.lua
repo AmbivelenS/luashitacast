@@ -67,7 +67,7 @@ layers.Sets.Weaponskill ={
         Neck = 'Peacock Amulet',
         Body = 'Scorpion Harness',
         Hands = 'Thick Mufflers',
-        Ring2 = 'Sun Ring',
+        Ring2 = 'Ruby Ring',
         Waist = 'Life Belt',
     }
 
