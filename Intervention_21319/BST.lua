@@ -94,7 +94,7 @@ layers.Sets.STR.Engaged = {
         Body = 'Haubergeon',
         Hands = 'Ogre Gloves',
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Courage Ring',
+        Ring2 = 'Ruby Ring',
         Waist = 'Swift Belt',
         Legs = "Byakko's Haidate",
         Feet = 'Wonder Clomps',
@@ -104,12 +104,12 @@ layers.Sets.Weaponskill ={
         Head = 'Wyvern Helm',
         Neck = 'Spike Necklace',
         Ear1 = 'Brutal Earring',
-        Ear2 = 'Beastly Earring',
+        Ear2 = 'Minuet Earring',
         Body = 'Haubergeon',
         Hands = 'Ogre Gloves',
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Courage Ring',
-        Waist = 'Brave Belt',
+        Ring2 = 'Ruby Ring',
+        Waist = 'Warwolf Belt',
         Legs = 'Bst. Trousers +1',
         Feet = 'Wonder Clomps',
 }
@@ -126,7 +126,7 @@ layers.Sets.ACC.Weaponskill = {
         Hands = 'Thick Mufflers',
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
-        Waist = 'Brave Belt',
+        Waist = 'Warwolf Belt',
         Legs = "Byakko's Haidate",
         Feet = 'Adaman Sollerets',
 }
@@ -154,7 +154,9 @@ layers.Sets.Ability['Charm'] = {
         Waist = 'Monster Belt',
 
 }
-
+layers.Sets.Ability['Call Beast'] ={
+        Hands = "Monster Gloves"
+}
 
 --Specialized Settings
 layers.RegisterCallback("PostHandleIdle", function()
