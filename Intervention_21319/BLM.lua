@@ -22,7 +22,7 @@ layers.Sets.Idle = {
     Legs = "Errant Slops",
     Feet = "Wizard's Sabots",
     Neck = "Philomath Stole",
-    Waist = "Mantra Belt",
+    Waist = "Sorcerer's Belt",
     Ammo = "Morion Tathlum",
     Back = "Black Cape +1",
     Ear1 = "Morion Earring",
@@ -113,7 +113,8 @@ layers.Sets.Midcast['Stoneskin'] ={
 }
 
 layers.Sets.Midcast['Dark'] = {
-    Legs = 'Wizard\'s Tonban'
+    Hands = "Sorcerer's Gloves",
+    Legs = 'Wizard\'s Tonban',
 }
 
 
