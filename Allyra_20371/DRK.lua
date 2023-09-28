@@ -66,9 +66,10 @@ layers.Sets.Engaged = {
 layers.Sets.Weaponskill ={
         Neck = 'Peacock Amulet',
         Body = 'Scorpion Harness',
-        Hands = 'Thick Mufflers',
+        Hands = 'Black Gadlings',
         Ring2 = 'Ruby Ring',
         Waist = 'Life Belt',
+        Feet = 'Black Sollerets'
     }
 
 layers.Sets.Ability['Souleater'] = {
@@ -115,7 +116,8 @@ layers.Sets.AbsorbStat = {
         Head = 'Chaos Burgeonet',
         Legs = 'Black Cuisses',
         Body = 'Scorpion Harness',
-        Hands = 'Abyss Gauntlets',
+        Hands = 'Black Gadlings',
+        Feet = 'Black Sollerets'
     }
 
 layers.Sets.Midcast['Dark Affinity'] = layers.Sets.Dark
