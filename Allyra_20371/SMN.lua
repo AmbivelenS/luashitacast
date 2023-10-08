@@ -34,8 +34,8 @@ layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
 --Staff Logic
 
 layers.Sets.PetIdle['Light Affinity'] = { 
-    Main = "Kukulcan's Staff",
-    Hands = "Carbuncle's Mitts"  }
+    Main = "Light Staff",
+    Hands = "Evoker's Mitts"  }
 
 layers.Sets.PetIdle['Dark Affinity'] = { 
     Main = "Dark Staff",
@@ -66,7 +66,7 @@ layers.Sets.PetIdle['Lightning Affinity'] = {
     Hands = "Evoker's Bracers" }
 
 layers.Sets.PetIdle['Carbuncle'] = {
-    Main = "Kukulcan's Staff",
+    Main = "Light Staff",
     Hands = "Carbuncle Mitts" }
 
 layers.Sets.PetEngaged = layers.Sets.PetIdle
