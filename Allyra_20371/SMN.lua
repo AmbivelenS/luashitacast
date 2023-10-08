@@ -35,7 +35,7 @@ layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
 
 layers.Sets.PetIdle['Light Affinity'] = { 
     Main = "Light Staff",
-    Hands = "Evoker's Mitts"  }
+    Hands = "Carbuncle Mitts"  }
 
 layers.Sets.PetIdle['Dark Affinity'] = { 
     Main = "Dark Staff",
