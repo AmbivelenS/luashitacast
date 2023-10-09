@@ -97,6 +97,8 @@ layers.Sets.Dark = {
         Hands = 'Abyss Gauntlets',
     }
 layers.Sets.Elemental = {
+        Body = 'Abyss Cuirass',
+        Hands = 'Abyss Gauntlets',
 
     }
 
