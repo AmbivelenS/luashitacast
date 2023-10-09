@@ -61,6 +61,14 @@ layers.Sets.Engaged = {
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
         Body = 'Haubergeon',
+        Feet = 'Homam Gambieras'
+        Waist = 'Swift Belt',
+        Ear1 = 'Coral Earring',
+        Ear2 = 'Brutal Earring',
+        Ring1 = 'Rajas Ring',
+        Ring2 = 'Jaeger Ring',
+        Legs = 'Black Cuisses',
+
     }
 
 layers.Sets.Weaponskill ={
