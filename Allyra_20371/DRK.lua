@@ -29,7 +29,7 @@ layers.Sets.PDT = {
         Neck = 'Peacock Amulet',
         Ear1 = 'Coral Earring',
         Ear2 = 'Brutal Earring',
-        Body = 'Scorpion Harness',
+        Body = 'Haubergeon',
         Hands = 'Thick Mufflers',
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
@@ -60,12 +60,12 @@ layers.Sets.Idle = {
 layers.Sets.Engaged = {
         Head = 'Optical Hat',
         Neck = 'Peacock Amulet',
-        Body = 'Scorpion Harness',
+        Body = 'Haubergeon',
     }
 
 layers.Sets.Weaponskill ={
         Neck = 'Peacock Amulet',
-        Body = 'Scorpion Harness',
+        Body = 'Haubergeon',
         Hands = 'Black Gadlings',
         Ring2 = 'Ruby Ring',
         Waist = 'Life Belt',
@@ -78,22 +78,22 @@ layers.Sets.Ability['Souleater'] = {
     }
 layers.Sets.Ability['Weapon Bash'] = {
         Hands = 'Chaos Gauntlets',
-        Body = 'Scorpion Harness',
+        Body = 'Haubergeon',
     }
 
 layers.Sets.Ability['Arcane Circle'] = {
         Feet = 'Chaos Sollerets',
-        Body = 'Scorpion Harness',
+        Body = 'Haubergeon',
     }
 layers.Sets.Ability['Last Resort'] = {
         Feet = 'Abyss Sollerets',
-        Body = 'Scorpion Harness', 
+        Body = 'Haubergeon', 
     }
 
 layers.Sets.Dark = {
         Head = 'Chaos Burgeonet',
         Legs = 'Abyss Flanchard',
-        Body = 'Scorpion Harness',
+        Body = 'Haubergeon',
         Hands = 'Abyss Gauntlets',
     }
 layers.Sets.Elemental = {
