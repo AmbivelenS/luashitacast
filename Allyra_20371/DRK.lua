@@ -25,7 +25,7 @@ layers.Sets.RBody.Engaged = {
         Body = 'Vampire Cloak',}
 layers.Sets.PDT = {
         Ammo = 'Happy Egg',
-        Head = 'Optical Hat',
+        Head = 'Homam Zuchetto',
         Neck = 'Peacock Amulet',
         Ear1 = 'Coral Earring',
         Ear2 = 'Brutal Earring',
@@ -58,7 +58,7 @@ layers.Sets.Idle = {
     }
 
 layers.Sets.Engaged = {
-        Head = 'Optical Hat',
+        Head = 'Homam Zuchetto',
         Neck = 'Peacock Amulet',
         Body = 'Haubergeon',
         Feet = 'Homam Gambieras',
@@ -78,6 +78,7 @@ layers.Sets.Weaponskill ={
         Ring2 = 'Ruby Ring',
         Waist = 'Life Belt',
         Feet = 'Black Sollerets'
+        Head = 'Optical Hat',
     }
 
 layers.Sets.Ability['Souleater'] = {
@@ -107,6 +108,7 @@ layers.Sets.Dark = {
 layers.Sets.Elemental = {
         Body = 'Abyss Cuirass',
         Hands = 'Abyss Gauntlets',
+        Head = 'Homam Zuchetto',
 
     }
 
@@ -120,6 +122,8 @@ layers.Sets.Enfeebling = {
         Body = 'Chaos Cuirass',
         Feet = 'Abyss Sollerets',
         Hands = 'Abyss Gauntlets',
+        Head = 'Homam Zuchetto',
+
     }
 
 layers.Sets.AbsorbStat = {
