@@ -25,7 +25,7 @@ layers.Sets.RBody.Engaged = {
         Body = 'Vampire Cloak',}
 layers.Sets.PDT = {
         Ammo = 'Happy Egg',
-        Head = 'Homam Zuchetto',
+        Head = 'Homam Zucchetto',
         Neck = 'Peacock Amulet',
         Ear1 = 'Coral Earring',
         Ear2 = 'Brutal Earring',
@@ -58,7 +58,7 @@ layers.Sets.Idle = {
     }
 
 layers.Sets.Engaged = {
-        Head = 'Homam Zuchetto',
+        Head = 'Homam Zucchetto',
         Neck = 'Peacock Amulet',
         Body = 'Haubergeon',
         Feet = 'Homam Gambieras',
@@ -108,7 +108,7 @@ layers.Sets.Dark = {
 layers.Sets.Elemental = {
         Body = 'Abyss Cuirass',
         Hands = 'Abyss Gauntlets',
-        Head = 'Homam Zuchetto',
+        Head = 'Homam Zucchetto',
 
     }
 
@@ -122,7 +122,7 @@ layers.Sets.Enfeebling = {
         Body = 'Chaos Cuirass',
         Feet = 'Abyss Sollerets',
         Hands = 'Abyss Gauntlets',
-        Head = 'Homam Zuchetto',
+        Head = 'Homam Zucchetto',
 
     }
 
