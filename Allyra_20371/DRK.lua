@@ -77,7 +77,7 @@ layers.Sets.Weaponskill ={
         Hands = 'Black Gadlings',
         Ring2 = 'Ruby Ring',
         Waist = 'Life Belt',
-        Feet = 'Black Sollerets'
+        Feet = 'Black Sollerets',
         Head = 'Optical Hat',
     }
 
