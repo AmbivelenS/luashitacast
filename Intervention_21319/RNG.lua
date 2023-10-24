@@ -21,7 +21,7 @@ layers.Sets.Idle = {
         Hands = "Noct Gloves +1",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
-        Waist = 'Brave Belt',
+        Waist = 'Ryl.Kgt. Belt',
         Legs = "Republic Cuisses" ,
         Feet = 'Wonder Clomps',
     }
@@ -36,21 +36,21 @@ layers.Sets.Engaged = {
         Hands = "Wonder Mitts",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
-        Waist = 'Brave Belt',
+        Waist = 'Ryl.Kgt. Belt',
         Legs = "Republic Cuisses" ,
         Feet = 'Wonder Clomps',
 }
 layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 
 --Midshot
-layers.Sets.Midshot = {
-        Head = 'Noct Beret +1',
+layers.Sets.Base.Midshot = {
+        Head = "Hunter's Beret",
         Neck = "Ranger's Necklace",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = 'Irn.Msk. Gambison',
-        Hands = "Noct Gloves +1",
-        Ring1 = 'Carapace Ring +1',
+        Hands = "Hunter's Bracers",
+        Ring1 = 'Rajas Ring',
         Ring2 = 'Crossbowman Ring',
         Legs = "Republic Cuisses" ,
 	}
@@ -61,10 +61,10 @@ layers.Sets.Acc.Midshot = {
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = 'Irn.Msk. Gambison',
-        Hands = "Noct Gloves +1",
-        Ring1 = 'Carapace Ring +1',
+        Hands = "Hunter's Bracers",
+        Ring1 = 'Rajas Ring',
         Ring2 = 'Carapace Ring +1',
-        Legs = "Republic Cuisses" ,
+        Legs = "Noct Brais +1" ,
         }
 
 layers.Sets.Stat.Midshot = {
@@ -100,6 +100,30 @@ layers.Sets.Weaponskill = {
         Ring2 = 'Carapace Ring +1',
         Legs = "Wonder Braccae",
 }
+
+layers.Sets.Weaponskill["Slug Shot"] = {
+        Head = 'Noct Beret +1',
+        Neck = "Peacock Amulet",
+        Ear1 = 'Drone Earring',
+        Ear2 = 'Drone Earring',
+        Body = 'Irn.Msk. Gambison',
+        Hands = "Hunter's Bracers",
+        Ring1 = 'Carapace Ring +1',
+        Ring2 = 'Carapace Ring +1',
+        Legs = "Noct Brais +1" ,
+}
+
+layers.Sets.Weaponskill["Sidewinder"] = layers.Sets.Weaponskill["Slug Shot"]
+
+layers.Sets.Ability['Sharpshot'] ={
+        Legs = "Hunter's Braccae"
+}
+
+layers.Sets.Ability['Shadowbind'] ={
+        Hands = "Hunter's Bracers"
+}
+
+
 -- layers.RegisterCallback("PostHandleIdle", function()
 --         local equip = gData.GetEquipment()
 --         local player = gData.GetPlayer()        
