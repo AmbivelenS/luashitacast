@@ -66,10 +66,10 @@ layers.Sets.Acc.Midshot = {
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
-        Body = 'Irn.Msk. Gambison',
+        Body = "Hunter's Jerkin",
         Hands = "Hunter's Bracers",
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Carapace Ring +1',
+        Ring2 = 'Scorpion Ring +1',
         Legs = "Noct Brais +1" ,
         }
 
@@ -103,7 +103,7 @@ layers.Sets.Weaponskill = {
         Body = 'Wonder Kaftan',
         Hands = "Wonder Mitts",
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Carapace Ring +1',
+        Ring2 = 'Scorpion Ring +1',
         Legs = "Wonder Braccae",
 }
 
@@ -114,8 +114,8 @@ layers.Sets.Weaponskill["Slug Shot"] = {
         Ear2 = 'Drone Earring',
         Body = "Hunter's Jerkin",
         Hands = "Hunter's Bracers",
-        Ring1 = 'Carapace Ring +1',
-        Ring2 = 'Carapace Ring +1',
+        Ring1 = 'Scorpion Ring +1',
+        Ring2 = 'Scorpion Ring +1',
         Legs = "Noct Brais +1" ,
 }
 
