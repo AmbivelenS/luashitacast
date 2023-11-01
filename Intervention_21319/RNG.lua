@@ -43,6 +43,12 @@ layers.Sets.Engaged = {
 layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 
 --Midshot
+
+-- Preshot: Snapshot, Rapid Shot
+-- Midshot: R.Acc, STP, Crit. Rate % / Crit. Damage+, R.Att, Recycle/Etc
+layers.Sets.Preshot = {
+          Head = "Hunter's Beret",      
+}
 layers.Sets.Base.Midshot = {
         Head = "Hunter's Beret",
         Neck = "Ranger's Necklace",
@@ -106,7 +112,7 @@ layers.Sets.Weaponskill["Slug Shot"] = {
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
-        Body = 'Irn.Msk. Gambison',
+        Body = "Hunter's Jerkin",
         Hands = "Hunter's Bracers",
         Ring1 = 'Carapace Ring +1',
         Ring2 = 'Carapace Ring +1',
@@ -123,7 +129,13 @@ layers.Sets.Ability['Shadowbind'] ={
         Hands = "Hunter's Bracers"
 }
 
+layers.Sets.Ability["Scavenge"] ={
+        Feet = "Hunter's Socks",
+}
 
+layers.Sets.Ability["Camouflage"] ={
+        Body = "Hunter's Jerkin"
+}
 -- layers.RegisterCallback("PostHandleIdle", function()
 --         local equip = gData.GetEquipment()
 --         local player = gData.GetPlayer()        
