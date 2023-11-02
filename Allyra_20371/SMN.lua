@@ -23,8 +23,8 @@ layers.Sets.Idle = {
 
 layers.Sets.Resting = {
     Main = "Dark Staff",
-    Body = "Seer's Tunic +1",
-    Legs = "",
+    Body = "Errant Hpl.",
+    Legs = "Baron's Slops",
 
 }
 
