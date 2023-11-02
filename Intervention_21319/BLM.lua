@@ -60,7 +60,7 @@ layers.Sets.Low.Midcast['Single Target Elemental'] = {
     Neck = "Philomath Stole",
 }
 layers.Sets.High.Midcast['Single Target Elemental'] = {
-    Head = "Sorcerer's Petasos",
+    Head = "Sorcerer's Petas.",
     Body = "Igqira Weskit",
     Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
@@ -78,7 +78,7 @@ layers.Sets.Low.Midcast['Enfeebling Elemental'] = {
     Neck = "Philomath Stole",
 }
 layers.Sets.High.Midcast['Enfeebling Elemental'] = {
-    Head = "Sorcerer's Petasos",
+    Head = "Sorcerer's Petas.",
     Body = "Errant Hpl.",
     Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
@@ -88,7 +88,7 @@ layers.Sets.High.Midcast['Enfeebling Elemental'] = {
 -- Setup base sets for specific spells
 
 layers.Sets.Midcast['Enfeebling'] = {
-    Head = "Sorcerer's Petasos",
+    Head = "Sorcerer's Petas.",
     Body = 'Wizard\'s Coat',
 
 }
