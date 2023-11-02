@@ -23,8 +23,8 @@ layers.Sets.Idle = {
 
 layers.Sets.Resting = {
     Main = "Dark Staff",
-    Body = "Seer's Tunic +1",
-    Legs = "",
+    Body = "Errant Hpl.",
+    Legs = "Baron's Slops",
 
 }
 
@@ -35,39 +35,48 @@ layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
 
 layers.Sets.PetIdle['Light Affinity'] = { 
     Main = "Light Staff",
-    Hands = "Carbuncle Mitts"  }
+    Hands = "Carbuncle Mitts",
+    Legs = "Evoker's Spats",  }
 
 layers.Sets.PetIdle['Dark Affinity'] = { 
     Main = "Dark Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Earth Affinity'] = { 
     Main = "Earth Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Water Affinity'] = { 
     Main = "Water Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Wind Affinity'] = { 
     Main = "Wind Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Fire Affinity'] = { 
     Main = "Fire Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Ice Affinity'] = { 
     Main = "Ice Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Lightning Affinity'] = { 
     Main = "Thunder Staff",
-    Hands = "Evoker's Bracers" }
+    Hands = "Summoner's Bracers",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetIdle['Carbuncle'] = {
     Main = "Light Staff",
-    Hands = "Carbuncle Mitts" }
+    Hands = "Carbuncle Mitts",
+    Legs = "Evoker's Spats", }
 
 layers.Sets.PetEngaged = layers.Sets.PetIdle
 
@@ -76,6 +85,9 @@ layers.Sets.PetEngaged = layers.Sets.PetIdle
 
 
 layers.Sets.Ability['Blood Pact'] ={
+    Hands = "Summoner's Bracers",
+    Legs = "Summoner's Spats",
+
 
 }
 
