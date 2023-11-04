@@ -6,7 +6,7 @@ local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
 layers.Sets.Idle = {
 
     Head = "",
-    Body = "Austere Robe",
+    Body = "Vermillion Cloak",
     Hands = "",
     Legs = "",
     Feet = "",
@@ -87,6 +87,7 @@ layers.Sets.PetEngaged = layers.Sets.PetIdle
 layers.Sets.Ability['Blood Pact'] ={
     Hands = "Summoner's Bracers",
     Legs = "Summoner's Spats",
+    Body = "Summoner's Doublet"
 
 
 }
