@@ -16,8 +16,8 @@ local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 layers.Sets.Idle = {
 
-    Head = "",
-    Body = "Black Cloak",
+    Head = "Sorcerer's Petas.",
+    Body = "Sorcerer's Coat",
     Hands = "Wizard's Gloves",
     Legs = "Errant Slops",
     Feet = "Wizard's Sabots",
@@ -56,7 +56,7 @@ layers.Sets.Midcast = {}
 layers.Sets.Low.Midcast['Single Target Elemental'] = {
     Head = "Wizard's Petasos",
     Body = "Igqira Weskit",
-    Hands = "Errant Cuffs",
+    Hands = "Zenith Mitts",
     Neck = "Philomath Stole",
 }
 layers.Sets.High.Midcast['Single Target Elemental'] = {
