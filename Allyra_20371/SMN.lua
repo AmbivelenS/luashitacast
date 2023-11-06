@@ -8,7 +8,7 @@ layers.Sets.Idle = {
     Head = "",
     Body = "Vermillion Cloak",
     Hands = "",
-    Legs = "",
+    Legs = "Evoker's Spats",
     Feet = "",
     Neck = "",
     Waist = "",
@@ -38,17 +38,20 @@ layers.Sets.PetIdle['Light Affinity'] = {
     Main = "Light Staff",
     Hands = "Carbuncle Mitts",
     Legs = "Evoker's Spats",
-    Body = "Vermillion Cloak",}
+    Body = "Vermillion Cloak",
+    Head = "",}
 
 layers.Sets.PetIdle['Dark Affinity'] = { 
     Main = "Dark Staff",
     Hands = "Summoner's Bracers",
+    Head = "",
     Legs = "Evoker's Spats", 
     Body = "Vermillion Cloak",}
 
 layers.Sets.PetIdle['Earth Affinity'] = { 
     Main = "Earth Staff",
     Hands = "Summoner's Bracers",
+    Head = "",
     Legs = "Evoker's Spats",
     Body = "Vermillion Cloak", }
 
@@ -56,18 +59,21 @@ layers.Sets.PetIdle['Water Affinity'] = {
     Main = "Water Staff",
     Hands = "Summoner's Bracers",
     Legs = "Evoker's Spats",
+    Head = "",
     Body = "Vermillion Cloak", }
 
 layers.Sets.PetIdle['Wind Affinity'] = { 
     Main = "Wind Staff",
     Hands = "Summoner's Bracers",
     Legs = "Evoker's Spats",
+    Head = "",
     Body = "Vermillion Cloak", }
 
 layers.Sets.PetIdle['Fire Affinity'] = { 
     Main = "Fire Staff",
     Hands = "Summoner's Bracers",
     Legs = "Evoker's Spats",
+    Head = "",
     Body = "Vermillion Cloak",
      }
 
@@ -75,6 +81,7 @@ layers.Sets.PetIdle['Ice Affinity'] = {
     Main = "Ice Staff",
     Hands = "Summoner's Bracers",
     Legs = "Evoker's Spats",
+    Head = "",
     Body = "Vermillion Cloak",
      }
 
@@ -82,6 +89,7 @@ layers.Sets.PetIdle['Lightning Affinity'] = {
     Main = "Thunder Staff",
     Hands = "Summoner's Bracers",
     Legs = "Evoker's Spats",
+    Head = "",
     Body = "Vermillion Cloak",
      }
 
@@ -89,6 +97,7 @@ layers.Sets.PetIdle['Carbuncle'] = {
     Main = "Light Staff",
     Hands = "Carbuncle Mitts",
     Legs = "Evoker's Spats",
+    Head = "",
     Body = "Vermillion Cloak",
     }
 
