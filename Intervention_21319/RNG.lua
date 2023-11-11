@@ -17,13 +17,13 @@ layers.Sets.Idle = {
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = 'Irn.Msk. Gambison',
-        Back = '',
+        Back = 'Amemet Mantle',
         Hands = "Noct Gloves +1",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
         Waist = 'Ryl.Kgt. Belt',
         Legs = "Republic Cuisses" ,
-        Feet = 'Wonder Clomps',
+        Feet = "Hunter's Socks",
     }
 
 layers.Sets.Engaged = {
@@ -59,6 +59,8 @@ layers.Sets.Base.Midshot = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Crossbowman Ring',
         Legs = "Republic Cuisses" ,
+        Feet = "Hunter's Socks",
+
 	}
 
 layers.Sets.Acc.Midshot = {
@@ -71,6 +73,8 @@ layers.Sets.Acc.Midshot = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Scorpion Ring +1',
         Legs = "Noct Brais +1" ,
+        Feet = "Hunter's Socks",
+
         }
 
 layers.Sets.Stat.Midshot = {
@@ -107,7 +111,19 @@ layers.Sets.Weaponskill = {
         Legs = "Wonder Braccae",
 }
 
-layers.Sets.Weaponskill["Slug Shot"] = {
+layers.Sets.Base.Weaponskill["Slug Shot"] = {
+        Head = 'Dobson Bandana',
+        Neck = "Peacock Amulet",
+        Ear1 = 'Minuet Earring',
+        Ear2 = 'Drone Earring',
+        Body = "Hunter's Jerkin",
+        Hands = "Wonder Mitts",
+        Ring1 = 'Scorpion Ring +1',
+        Ring2 = 'Scorpion Ring +1',
+        Legs = "Noct Brais +1" ,
+}
+
+layers.Sets.Acc.Weaponskill["Slug Shot"] = {
         Head = 'Noct Beret +1',
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
@@ -136,7 +152,7 @@ layers.Sets.Ability["Scavenge"] ={
 layers.Sets.Ability["Camouflage"] ={
         Body = "Hunter's Jerkin"
 }
--- layers.RegisterCallback("PostHandleIdle", function()
+-- layers.RegisterCallback("PostHandleMidshot", function()
 --         local equip = gData.GetEquipment()
 --         local player = gData.GetPlayer()        
 --         if (equip.Ammo.Name =="Holy Bolt") then
