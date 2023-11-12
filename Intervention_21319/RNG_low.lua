@@ -12,7 +12,7 @@ local attackMode = layers.CreateModeGroup('AttackMode', {'Base', 'Acc', 'Stat'},
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 layers.Sets.Idle = {
-        Head = 'Optical Hat',
+        Head = 'Noct Beret +1',
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
@@ -27,12 +27,12 @@ layers.Sets.Idle = {
     }
 
 layers.Sets.Engaged = {
-        Head = 'Optical Hat',
+        Head = 'Noct Beret +1',
         Neck = "Peacock Amulet",
         Ear1 = 'Horn Earring +1',
         Ear2 = 'Horn Earring +1',
         Body = 'Wonder Kaftan',
-        Back = 'Amemet Mantle',
+        Back = '',
         Hands = "Wonder Mitts",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
@@ -64,7 +64,7 @@ layers.Sets.Base.Midshot = {
         }
 
 layers.Sets.Acc.Midshot = {
-        Head = 'Optical Hat',
+        Head = 'Noct Beret +1',
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
@@ -78,7 +78,7 @@ layers.Sets.Acc.Midshot = {
         }
 
 layers.Sets.Stat.Midshot = {
-        Head = 'Optical Hat',
+        Head = 'Noct Beret +1',
         Neck = "Ranger's Necklace",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
@@ -100,7 +100,7 @@ layers.Sets.Mnd = {
      }
 
 layers.Sets.Weaponskill = {
-        Head = 'Optical Hat',
+        Head = 'Noct Beret +1',
         Neck = "Spike Necklace",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
@@ -112,19 +112,19 @@ layers.Sets.Weaponskill = {
 }
 
 layers.Sets.Base.Weaponskill["Slug Shot"] = {
-        Head = 'Optical Hat',
+        Head = 'Dobson Bandana',
         Neck = "Peacock Amulet",
         Ear1 = 'Minuet Earring',
         Ear2 = 'Drone Earring',
         Body = "Hunter's Jerkin",
         Hands = "Wonder Mitts",
-        Ring1 = 'Rajas Ring',
+        Ring1 = 'Scorpion Ring +1',
         Ring2 = 'Scorpion Ring +1',
         Legs = "Noct Brais +1" ,
 }
 
 layers.Sets.Acc.Weaponskill["Slug Shot"] = {
-        Head = 'Optical Hat',
+        Head = 'Noct Beret +1',
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
