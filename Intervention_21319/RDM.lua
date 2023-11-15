@@ -66,7 +66,7 @@ layers.Sets.Midcast["Dark Magic Enfeebling"]={
     --Back = "Mist Silk Cape",
     --Ear1 = "Energy Earring +1",
     --Ear2 = "Energy Earring +1",
-    Ring1 = "Eremite's Ring",
+    Ring1 = "Eremite's Ring +1",
     Ring2 = "Eremite's Ring +1"
 	
 }

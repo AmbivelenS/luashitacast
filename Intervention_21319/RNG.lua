@@ -58,7 +58,7 @@ layers.Sets.Base.Midshot = {
         Hands = "Hunter's Bracers",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Crossbowman Ring',
-        Legs = "Republic Cuisses" ,
+        Legs = "Scout's Braccae" ,
         Feet = "Hunter's Socks",
 
         }
@@ -72,7 +72,7 @@ layers.Sets.Acc.Midshot = {
         Hands = "Hunter's Bracers",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Scorpion Ring +1',
-        Legs = "Noct Brais +1" ,
+        Legs = "Scout's Braccae" ,
         Feet = "Hunter's Socks",
 
         }
