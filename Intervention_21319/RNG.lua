@@ -13,7 +13,7 @@ local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 layers.Sets.Idle = {
         Head = 'Optical Hat',
-        Neck = "Peacock Amulet",
+        Neck = "Jeweled Collar",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = 'Irn.Msk. Gambison',
