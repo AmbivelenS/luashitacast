@@ -27,8 +27,8 @@ layers.Sets.Idle = {
     Back = "Black Cape +1",
     Ear1 = "Morion Earring",
     Ear2 = "Moldavite Earring",
-    Ring1 = "Zircon Ring",
-    Ring2 = "Zircon Ring"
+    Ring1 = "Diamond Ring",
+    Ring2 = "Diamond Ring"
 
 }
 
@@ -106,8 +106,8 @@ layers.Sets.Midcast['Stoneskin'] ={
     Legs = "Errant Slops",
     Feet = "Errant Pigaches",
     Neck = "Justice Badge",
-    Ring1 = "Saintly Ring",
-    Ring2 = "Saintly Ring",
+    Ring1 = "Saintly Ring +1",
+    Ring2 = "Saintly Ring +1",
 
 
 }
