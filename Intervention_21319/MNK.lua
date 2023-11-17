@@ -1,6 +1,6 @@
 local layers = gFunc.LoadFile('layers\\layers.lua')
 
-local macroBook = '9'
+local macroBook = '11'
 local macroSet = '1'
 
 AshitaCore:GetChatManager():QueueCommand(1, '/macro book '.. macroBook);
