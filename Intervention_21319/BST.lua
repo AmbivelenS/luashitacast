@@ -159,12 +159,12 @@ layers.Sets.Ability['Call Beast'] ={
 }
 
 --Specialized Settings
-layers.RegisterCallback("PostHandleIdle", function()
-    local player = gData.GetPlayer()
-	if (player.MP <= 49 and player.MaxMP ~= 0) then
-        gFunc.Equip('Body', 'Gaudy Harness');
-    end
-end, "Gaudy Harness Equip")        
+-- layers.RegisterCallback("PostHandleIdle", function()
+--     local player = gData.GetPlayer()
+-- 	if (player.MP <= 49 and player.MaxMP ~= 0) then
+--         gFunc.Equip('Body', 'Gaudy Harness');
+--     end
+-- end, "Gaudy Harness Equip")        
 
 
 return layers
