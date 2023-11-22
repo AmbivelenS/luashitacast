@@ -22,7 +22,8 @@ layers.Sets.SNeck.Idle = {Neck = 'Opo-opo Necklace',}
 layers.Sets.RGorget.Engaged = {Neck = 'Parade Gorget',}
 layers.Sets.RBody.Engaged = {
         Head = '',
-        Body = 'Vampire Cloak',}
+        Body = 'Vampire Cloak',
+        Legs = 'Homam Cosciales',}
 layers.Sets.PDT = {
         Ammo = 'Happy Egg',
         Head = 'Homam Zucchetto',
@@ -35,7 +36,7 @@ layers.Sets.PDT = {
         Ring2 = 'Jaeger Ring',
         Back = 'Abyss Cape',
         Waist = 'Swift Belt',
-        Legs = 'Homan Cosciales',
+        Legs = 'Homam Cosciales',
         Feet = 'Homam Gambieras',
     }
 
@@ -53,7 +54,7 @@ layers.Sets.Idle = {
         Ring2 = 'Jaeger Ring',
         Back = 'Abyss Cape',
         Waist = 'Swift Belt',
-        Legs = 'Homan Cosciales',
+        Legs = 'Homam Cosciales',
         Feet = 'Homam Gambieras',
     }
 
@@ -67,7 +68,7 @@ layers.Sets.Engaged = {
         Ear2 = 'Brutal Earring',
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
-        Legs = 'Homan Cosciales',
+        Legs = 'Homam Cosciales',
     }
 
 layers.Sets.Weaponskill ={
