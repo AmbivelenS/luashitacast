@@ -35,7 +35,7 @@ layers.Sets.PDT = {
         Ring2 = 'Jaeger Ring',
         Back = 'Abyss Cape',
         Waist = 'Swift Belt',
-        Legs = 'Abyss Flanchard',
+        Legs = 'Homan Coscials',
         Feet = 'Homam Gambieras',
     }
 
@@ -53,7 +53,7 @@ layers.Sets.Idle = {
         Ring2 = 'Jaeger Ring',
         Back = 'Abyss Cape',
         Waist = 'Swift Belt',
-        Legs = 'Black Cuisses',
+        Legs = 'Homan Coscials',
         Feet = 'Homam Gambieras',
     }
 
@@ -67,8 +67,7 @@ layers.Sets.Engaged = {
         Ear2 = 'Brutal Earring',
         Ring1 = 'Rajas Ring',
         Ring2 = 'Jaeger Ring',
-        Legs = 'Black Cuisses',
-
+        Legs = 'Homan Coscials',
     }
 
 layers.Sets.Weaponskill ={
@@ -79,6 +78,7 @@ layers.Sets.Weaponskill ={
         Waist = 'Life Belt',
         Feet = 'Black Sollerets',
         Head = 'Optical Hat',
+        Legs = 'Black Cuisses',
     }
 
 layers.Sets.Ability['Souleater'] = {
