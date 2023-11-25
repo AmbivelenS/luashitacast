@@ -71,7 +71,7 @@ layers.Sets.Midcast["Dark Magic Enfeebling"]={
 	
 }
 
-layers.RegisterCallback("PostHandleResting", function(spell)
+layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
     if player.SubJob  == BLM then
         gFunc.Equip("Back", "Wizard's Mantle")
