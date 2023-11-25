@@ -139,6 +139,16 @@ layers.Sets.Midcast['Fire Magic Damage'] = { Main = "Fire Staff" }
 layers.Sets.Midcast['Ice Magic Damage'] = { Main = "Ice Staff" }
 layers.Sets.Midcast['Lightning Magic Damage'] = { Main = "Thunder Staff" }
 
+-- Logic
 
+layers.RegisterCallback("PostHandleMidcast", function(spell)
+    local player = gData.GetPlayer()
+    if player.MPP <= 50 then
+        gFunc.Equip("Neck", "Uggalepih Pendant")
+        -- if layers.GetClassifiers('Spell', spell.Name)['Elemental Ninjutsu'] then
+        --     gFunc.Equip("Waist", "Ryl.Kgt. Belt")
+        -- end
+    end
+end, "Midcast Uggalepih Pendant")
 
 return layers
