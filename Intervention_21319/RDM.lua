@@ -75,9 +75,7 @@ layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
     if player.SubJob  == BLM then
         gFunc.Equip("Back", "Wizard's Mantle")
-        -- if layers.GetClassifiers('Spell', spell.Name)['Elemental Ninjutsu'] then
-        --     gFunc.Equip("Waist", "Ryl.Kgt. Belt")
-        -- end
+        print player.SubJob
     end
 end, "/BLM JSE Gear")
 
