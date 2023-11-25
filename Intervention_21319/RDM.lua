@@ -12,7 +12,7 @@ local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 layers.Sets.Idle = {
 
     Head = "Republic Cap",
-    Body = "Republic Harness",
+    Body = "Baron's Saio",
     Hands = "Republic Mittens",
     Legs = "Windurstian Slops",
     Feet = "Republic Leggings",
@@ -20,8 +20,8 @@ layers.Sets.Idle = {
     Waist = "Friar's Rope",
     Ammo = "",
     Back = "Mist Silk Cape",
-    Ear1 = "Energy Earring +1",
-    Ear2 = "Energy Earring +1",
+    Ear1 = "Morion Earring",
+    Ear2 = "Morion Earring",
     Ring1 = "Saintly Ring +1",
     Ring2 = "Saintly Ring +1"
 
@@ -48,8 +48,8 @@ layers.Sets.Midcast["White Magic Enfeebling"]={
     Waist = "Friar's Rope",
     --Ammo = "",
     Back = "White Cape +1",
-    --Ear1 = "Energy Earring +1",
-    --Ear2 = "Energy Earring +1",
+    --Ear1 = "Morion Earring",
+    --Ear2 = "Morion Earring",
     Ring1 = "Saintly Ring +1",
     Ring2 = "Saintly Ring +1"
 }
@@ -64,11 +64,21 @@ layers.Sets.Midcast["Dark Magic Enfeebling"]={
     --Waist = "Friar's Rope",
     --Ammo = "",
     Back = "Black Cape +1",
-    --Ear1 = "Energy Earring +1",
-    --Ear2 = "Energy Earring +1",
+    --Ear1 = "Morion Earring",
+    --Ear2 = "Morion Earring",
     Ring1 = "Eremite's Ring +1",
     Ring2 = "Eremite's Ring +1"
 	
 }
+
+layers.RegisterCallback("PostHandleResting", function(spell)
+    local player = gData.GetPlayer()
+    if player.SubJob  == BLM then
+        gFunc.Equip("Back", "Wizard's Mantle")
+        -- if layers.GetClassifiers('Spell', spell.Name)['Elemental Ninjutsu'] then
+        --     gFunc.Equip("Waist", "Ryl.Kgt. Belt")
+        -- end
+    end
+end, "/BLM JSE Gear")
 
 return layers
