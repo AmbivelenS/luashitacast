@@ -75,7 +75,7 @@ layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
     if player.SubJob  == BLM then
         gFunc.Equip("Back", "Wizard's Mantle")
-        print player.SubJob
+        print(player.SubJob)
     end
 end, "/BLM JSE Gear")
 
