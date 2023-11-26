@@ -17,7 +17,7 @@ layers.Sets.Idle = {
     Legs = "Windurstian Slops",
     Feet = "Republic Leggings",
     Neck = "Justice Badge",
-    Waist = "Friar's Rope",
+    Waist = "Mrc.Cpt. Belt",
     Ammo = "",
     Back = "Mist Silk Cape",
     Ear1 = "Morion Earring",
@@ -45,7 +45,7 @@ layers.Sets.Midcast["White Magic Enfeebling"]={
     Legs = "Wonder Braccae",
     --Feet = "Republic Leggings",
     Neck = "Justice Badge",
-    Waist = "Friar's Rope",
+    Waist = "Mrc.Cpt. Belt",
     --Ammo = "",
     Back = "White Cape +1",
     --Ear1 = "Morion Earring",
@@ -61,7 +61,7 @@ layers.Sets.Midcast["Dark Magic Enfeebling"]={
 	--Legs = "Windurstian Slops",
     --Feet = "Republic Leggings",
     Neck = "Black Neckerchief",
-    --Waist = "Friar's Rope",
+    --Waist = "Mrc.Cpt. Belt",
     --Ammo = "",
     Back = "Black Cape +1",
     --Ear1 = "Morion Earring",
@@ -71,11 +71,28 @@ layers.Sets.Midcast["Dark Magic Enfeebling"]={
 	
 }
 
+layers.Sets.Midcast['Single Target Elemental'] = {
+    Head = "Republic Cap",
+    Body = "Baron's Saio",
+	--Hands = "Republic Mittens",
+	--Legs = "Windurstian Slops",
+    --Feet = "Republic Leggings",
+    Neck = "Black Neckerchief",
+    --Waist = "Mrc.Cpt. Belt",
+    --Ammo = "",
+    Back = "Black Cape +1",
+    --Ear1 = "Morion Earring",
+    --Ear2 = "Morion Earring",
+    Ring1 = "Eremite's Ring +1",
+    Ring2 = "Eremite's Ring +1"
+	
+}
+
+
 layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
-    if player.SubJob  == BLM then
+    if player.SubJob == "BLM" then
         gFunc.Equip("Back", "Wizard's Mantle")
-        print(player.SubJob)
     end
 end, "/BLM JSE Gear")
 
