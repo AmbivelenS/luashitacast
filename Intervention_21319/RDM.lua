@@ -88,8 +88,24 @@ layers.Sets.Midcast['Single Target Elemental'] = {
 	
 }
 
+
+layers.Sets.Midcast['Stoneskin']={
+    Head = "Traveler's Hat",
+    Body = "Baron's Saio",
+    Hands = "Devotee's Mitts",
+    Legs = "Wonder Braccae",
+    --Feet = "Republic Leggings",
+    Neck = "Justice Badge",
+    Waist = "Mrc.Cpt. Belt",
+    --Ammo = "",
+    Back = "White Cape +1",
+    --Ear1 = "Morion Earring",
+    --Ear2 = "Morion Earring",
+    Ring1 = "Saintly Ring +1",
+    Ring2 = "Saintly Ring +1"   
+}
 layers.Sets.Ability['Convert']={
-    
+
 }
 
 layers.RegisterCallback("PostHandleResting", function()
