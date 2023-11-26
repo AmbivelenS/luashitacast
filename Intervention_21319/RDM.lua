@@ -11,15 +11,15 @@ local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
 layers.Sets.Idle = {
 
-    Head = "Republic Cap",
+    Head = "Baron's Chapeau",
     Body = "Baron's Saio",
     Hands = "Republic Mittens",
-    Legs = "Windurstian Slops",
+    Legs = "Mage's Slacks",
     Feet = "Republic Leggings",
     Neck = "Justice Badge",
     Waist = "Mrc.Cpt. Belt",
-    Ammo = "",
-    Back = "Mist Silk Cape",
+    Ammo = "Morion Tathlum",
+    Back = "White Cape +1",
     Ear1 = "Morion Earring",
     Ear2 = "Morion Earring",
     Ring1 = "Saintly Ring +1",
@@ -55,10 +55,10 @@ layers.Sets.Midcast["White Magic Enfeebling"]={
 }
 
 layers.Sets.Midcast["Dark Magic Enfeebling"]={
-    Head = "Republic Cap",
+    Head = "Baron's Chapeau",
     Body = "Baron's Saio",
 	--Hands = "Republic Mittens",
-	--Legs = "Windurstian Slops",
+	--Legs = "Mage's Slacks",
     --Feet = "Republic Leggings",
     Neck = "Black Neckerchief",
     --Waist = "Mrc.Cpt. Belt",
@@ -72,10 +72,10 @@ layers.Sets.Midcast["Dark Magic Enfeebling"]={
 }
 
 layers.Sets.Midcast['Single Target Elemental'] = {
-    Head = "Republic Cap",
+    Head = "Baron's Chapeau",
     Body = "Baron's Saio",
 	--Hands = "Republic Mittens",
-	--Legs = "Windurstian Slops",
+	--Legs = "Mage's Slacks",
     --Feet = "Republic Leggings",
     Neck = "Black Neckerchief",
     --Waist = "Mrc.Cpt. Belt",
@@ -88,6 +88,9 @@ layers.Sets.Midcast['Single Target Elemental'] = {
 	
 }
 
+layers.Sets.Ability['Convert']={
+    
+}
 
 layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
