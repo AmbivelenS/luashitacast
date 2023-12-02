@@ -163,12 +163,12 @@ layers.Sets.Ability["Camouflage"] ={
 --     end
 -- end, "Gaudy Harness Equip")   
 
-layers.RegisterCallback("PostHandleEngage", function()
+layers.RegisterCallback("PostHandleEngaged", function()
         -- local equip = gData.GetEquipment()
         if regen.current == 'On' then
-                print("Regen On")
+                -- print("Regen On")
                 gFunc.Equip("Main", "Rune Axe");
-                -- gFunc.Equip("Body", "Black Cotehardie")
+                gFunc.Equip("Body", "Black Cotehardie")
         end
 end, "Regen Gear")
 return layers
