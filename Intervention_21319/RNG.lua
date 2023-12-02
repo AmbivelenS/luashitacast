@@ -169,5 +169,5 @@ layers.RegisterCallback("PostHandleEngage", function()
                 gFunc.Equip("Main", "Rune Axe");
                 gFunc.Equip("Body", "Black Cotehardie")
         end
-end "Regen Gear")
+end, "Regen Gear")
 return layers
