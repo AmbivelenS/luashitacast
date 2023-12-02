@@ -10,6 +10,7 @@ AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 -- local boltMode = layers.CreateModeGroup('boltStat', {'Off', 'Mnd', 'Int'}, '@t')
 local attackMode = layers.CreateModeGroup('AttackMode', {'Base', 'Acc', 'Stat'}, '@t')
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
+local regen = layers.CreateModeGroup('RegenGear', {'Off', 'On'}, '@3')
 
 layers.Sets.Idle = {
         Head = 'Optical Hat',
@@ -160,5 +161,13 @@ layers.Sets.Ability["Camouflage"] ={
 --         else
 --                 layers.Sets.Midshot = layers.Sets.Acc;
 --     end
--- end, "Gaudy Harness Equip")          
+-- end, "Gaudy Harness Equip")   
+
+layers.RegisterCallback("PostHandleEngage", function()
+        local equip = gData.GetEquipment()
+        if regen.current == 'On' then
+                gFunc.Equip("Main", "Rune Axe");
+                gFunc.Equip("Body", "Black Cotehardie")
+        end
+end "Regen Gear")
 return layers
