@@ -9,7 +9,7 @@ AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 
 
 
-local combatMode = layers.CreateModeGroup('Resist', {'Low', 'High'}, '@t')
+local combatMode = layers.CreateModeGroup('Resist', {'Low', 'High', 'OneFifty'}, '@t')
 local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 
@@ -19,16 +19,16 @@ layers.Sets.Idle = {
     Head = "Sorcerer's Petas.",
     Body = "Sorcerer's Coat",
     Hands = "Wizard's Gloves",
-    Legs = "Errant Slops",
+    Legs = "Mahatma Slops",
     Feet = "Wizard's Sabots",
     Neck = "Philomath Stole",
     Waist = "Sorcerer's Belt",
-    Ammo = "Morion Tathlum",
+    Ammo = "Phtm. Tathlum",
     Back = "Black Cape +1",
     Ear1 = "Morion Earring",
     Ear2 = "Moldavite Earring",
     Ring1 = "Diamond Ring",
-    Ring2 = "Diamond Ring"
+    Ring2 = "Snow Ring"
 
 }
 
@@ -73,6 +73,7 @@ layers.Sets.High.Midcast['Single Target Elemental'] = {
 
 }
 
+
 layers.Sets.Low.Midcast['Ga'] = layers.Sets.Low.Midcast['Single Target Elemental']
 
 layers.Sets.Low.Midcast['Ga'] = layers.Sets.High.Midcast['Single Target Elemental']
@@ -89,6 +90,22 @@ layers.Sets.High.Midcast['Enfeebling Elemental'] = {
     Body = "Errant Hpl.",
     Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
+}
+
+layers.Sets.OneFifty.MidCast['Enfeebling Elemental'] = {
+    Head = "Wzd. Petasos +1",
+    Body = "Errant Hpl.",
+    Hands = "Errant Cuffs",
+    Legs = "Mahatma Slops",
+    Feet = "Src. Sabots +1",
+    Neck = "Philomath Stole",
+    Waist = "Sorcerer's Belt",
+    Ammo = "Phtm. Tathlum",
+    Back = "Black Cape +1",
+    Ear1 = "Morion Earring",
+    Ear1 = "Morion Earring",
+    Ring1 = "Diamond Ring",
+    Ring2 = "Snow Ring"
 }
 
 
@@ -110,7 +127,7 @@ layers.Sets.Midcast['Stoneskin'] ={
     Head = "Traveler's Hat",
     Body = "Errant Hpl.",
     Hands = "Errant Cuffs",
-    Legs = "Errant Slops",
+    Legs = "Mahatma Slops",
     Feet = "Errant Pigaches",
     Neck = "Justice Badge",
     Ring1 = "Saintly Ring +1",
