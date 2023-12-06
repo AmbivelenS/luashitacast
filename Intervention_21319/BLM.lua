@@ -170,7 +170,10 @@ layers.Sets.Midcast['Lightning Magic Damage'] = { Main = "Thunder Staff" }
 
 layers.RegisterCallback("PostHandleMidcast", function(spell)
     local player = gData.GetPlayer()
-    if player.MPP <= 50 then
+    if player.MPP <= 50 and (layers.GetClassifiers('Spell', spell.Name)['Single Target Elemental'] or 
+                            layers.GetClassifiers('Spell', spell.Name)['Ga'] or
+                            layers.GetClassifiers('Spell', spell.Name)['Absorption']
+                             ) then
         gFunc.Equip("Neck", "Uggalepih Pendant")
         -- if layers.GetClassifiers('Spell', spell.Name)['Elemental Ninjutsu'] then
         --     gFunc.Equip("Waist", "Ryl.Kgt. Belt")
