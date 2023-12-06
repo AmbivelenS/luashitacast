@@ -73,11 +73,13 @@ layers.Sets.High.Midcast['Single Target Elemental'] = {
 
 }
 
+layers.Sets.OneFifty.Midcast['Single Target Elemental'] = layers.Sets.High.Midcast['Single Target Elemental'] 
 
 layers.Sets.Low.Midcast['Ga'] = layers.Sets.Low.Midcast['Single Target Elemental']
 
-layers.Sets.Low.Midcast['Ga'] = layers.Sets.High.Midcast['Single Target Elemental']
+layers.Sets.High.Midcast['Ga'] = layers.Sets.High.Midcast['Single Target Elemental']
 
+layers.Sets.OneFifty.Midcast['Ga'] = layers.Sets.OneFifty.Midcast['Single Target Elemental']
 
 layers.Sets.Low.Midcast['Enfeebling Elemental'] = {
     Head = "Wzd. Petasos +1",
