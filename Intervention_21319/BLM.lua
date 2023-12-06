@@ -92,7 +92,7 @@ layers.Sets.High.Midcast['Enfeebling Elemental'] = {
     Neck = 'Elemental Torque',  
 }
 
-layers.Sets.OneFifty.MidCast['Enfeebling Elemental'] = {
+layers.Sets.OneFifty.Midcast['Enfeebling Elemental'] = {
     Head = "Wzd. Petasos +1",
     Body = "Errant Hpl.",
     Hands = "Errant Cuffs",
