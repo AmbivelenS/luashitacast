@@ -104,7 +104,7 @@ layers.Sets.OneFifty.Midcast['Enfeebling Elemental'] = {
     Ammo = "Phtm. Tathlum",
     Back = "Black Cape +1",
     Ear1 = "Morion Earring",
-    Ear1 = "Morion Earring",
+    Ear2 = "Morion Earring",
     Ring1 = "Diamond Ring",
     Ring2 = "Snow Ring"
 }
