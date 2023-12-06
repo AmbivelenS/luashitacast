@@ -133,7 +133,7 @@ layers.Sets.ACC.Weaponskill = {
 
 
 layers.Sets.Ability['Reward'] ={
-        Body = "Monster Jackcoat",
+        Body = "Bst. Jackcoat +1",
         Hands = 'Ogre Gloves',
         Feet = 'Monster Gaiters',
         Neck = 'Justice Badge',
@@ -144,7 +144,7 @@ layers.Sets.Ability['Reward'] ={
 layers.Sets.Ability['Charm'] = {
         Main = "Light Staff",
         Head = 'Monster Helm',
-        Body = "Monster Jackcoat",
+        Body = "Bst. Jackcoat +1",
         Hands ='Monster Gloves',
         Legs = 'Bst. Trousers +1',
         Feet = "Monster Gaiters",
