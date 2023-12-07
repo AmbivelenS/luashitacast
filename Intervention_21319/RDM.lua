@@ -34,7 +34,10 @@ layers.Sets.Resting = {
     Legs = "Baron's Slops",
 
 }
-
+-- Precast
+layers.Sets.Precast={
+    Belt = "Swift Belt",
+}
 
 -- Enfeebling Sets
 
@@ -82,7 +85,7 @@ layers.Sets.Midcast['Single Target Elemental'] = {
     --Ammo = "",
     Back = "Black Cape +1",
     --Ear1 = "Morion Earring",
-    --Ear2 = "Morion Earring",
+    Ear2 = "Moldavite Earring",
     Ring1 = "Eremite's Ring +1",
     Ring2 = "Eremite's Ring +1"
 	
