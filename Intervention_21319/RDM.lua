@@ -31,6 +31,7 @@ layers.Sets.Idle = {
 layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 
 layers.Sets.Resting = {
+    Main = "Dark Staff",
     Legs = "Baron's Slops",
 
 }
@@ -110,6 +111,28 @@ layers.Sets.Midcast['Stoneskin']={
 layers.Sets.Ability['Convert']={
 
 }
+
+
+-- Staff related Enfeebling and Healing
+layers.Sets.Midcast['Wind Enfeeblement'] = { Main = "Wind Staff" }
+layers.Sets.Midcast['Ice Enfeeblement'] = { Main = "Ice Staff" }
+layers.Sets.Midcast['Dark Enfeeblement'] = { Main = "Dark Staff" }
+-- Stun
+layers.Sets.Midcast['Lightning Enfeeblement'] = { Main = "Thunder Staff" }
+
+
+layers.Sets.Midcast['Light Affinity'] = { Main = "Light Staff" }
+
+
+-- Staff related Damage Spells
+layers.Sets.Midcast['Dark Affinity'] = { Main = "Dark Staff" }
+layers.Sets.Midcast['Earth Magic Damage'] = { Main = "Earth Staff" }
+layers.Sets.Midcast['Water Magic Damage'] = { Main = "Water Staff" }
+layers.Sets.Midcast['Wind Magic Damage'] = { Main = "Wind Staff" }
+layers.Sets.Midcast['Fire Magic Damage'] = { Main = "Fire Staff" }
+layers.Sets.Midcast['Ice Magic Damage'] = { Main = "Ice Staff" }
+layers.Sets.Midcast['Lightning Magic Damage'] = { Main = "Thunder Staff" }
+
 
 layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
