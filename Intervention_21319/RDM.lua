@@ -136,11 +136,28 @@ layers.Sets.Midcast['Ice Magic Damage'] = { Main = "Ice Staff" }
 layers.Sets.Midcast['Lightning Magic Damage'] = { Main = "Thunder Staff" }
 
 
+layers.Sets.PetIdle['Light Affinity'] = {Main = "Light Staff"  }
+layers.Sets.PetIdle['Dark Affinity'] = { Main = "Dark Staff" }
+layers.Sets.PetIdle['Earth Affinity'] = { Main = "Earth Staff" }
+layers.Sets.PetIdle['Water Affinity'] = { Main = "Water Staff" }
+layers.Sets.PetIdle['Wind Affinity'] = { Main = "Wind Staff" }
+layers.Sets.PetIdle['Fire Affinity'] = { Main = "Fire Staff" }
+layers.Sets.PetIdle['Ice Affinity'] = { Main = "Ice Staff" }
+layers.Sets.PetIdle['Lightning Affinity'] = { Main = "Thunder Staff" }
+
+
 layers.RegisterCallback("PostHandleResting", function()
     local player = gData.GetPlayer()
     if player.SubJob == "BLM" then
         gFunc.Equip("Back", "Wizard's Mantle")
     end
 end, "/BLM JSE Gear")
+
+layers.RegisterCallback("PostHandleIdle", function()
+    local player = gData.GetPlayer()
+    if player.SubJob == "SMN" then
+        gFunc.Equip("Waist", "Avatar Belt")
+    end
+end, "/SMN JSE Gear")
 
 return layers
