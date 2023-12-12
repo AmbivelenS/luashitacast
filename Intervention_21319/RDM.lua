@@ -8,6 +8,7 @@ AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 
 
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
+local weaponMode = layers.CreateModeGroup('Weapons', {'Staves', 'Warp'}, '@w')
 
 layers.Sets.Idle = {
 
@@ -26,7 +27,8 @@ layers.Sets.Idle = {
     Ring2 = "Saintly Ring +1"
 
 }
-
+layers.Sets.Staves.Idle = {Main = 'Earth Staff'}
+layers.Sets.Warp.Idle = {Main = "Warp Cudgel"}
 
 layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 
