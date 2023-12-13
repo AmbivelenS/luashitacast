@@ -20,11 +20,12 @@ layers.Sets.Idle = {
         Body = "Kirin's Osode",
         Back = 'Amemet Mantle',
         Hands = "Seiryu's Kote",
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Courage Ring',
+        Ring1 = 'Coral Ring',
+        Ring2 = "Merman's Ring",
         Waist = "Scout's Belt",
         Legs = "Byakko's Haidate" ,
-        Feet = "Scout's Socks",
+        Feet = "Sct. Socks +1",
+        Ammo = "Silver Bullet"
     }
 
 layers.Sets.Engaged = {
@@ -61,7 +62,7 @@ layers.Sets.Base.Midshot = {
         Ring1 = 'Rajas Ring',
         Ring2 = 'Crossbowman Ring',
         Legs = "Scout's Braccae" ,
-        Feet = "Scout's Socks",
+        Feet = "Sct. Socks +1",
 
         }
 
@@ -73,9 +74,9 @@ layers.Sets.Acc.Midshot = {
         Body = "Hunter's Jerkin",
         Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Scorpion Ring +1',
+        Ring2 = "Merman's Ring",
         Legs = "Scout's Braccae" ,
-        Feet = "Scout's Socks",
+        Feet = "Sct. Socks +1",
 
         }
 
@@ -110,9 +111,9 @@ layers.Sets.Weaponskill = {
         Body = "Kirin's Osode",
         Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Scorpion Ring +1',
+        Ring2 = "Flame Ring",
         Legs = "Scout's Braccae" ,
-        Feet = "Scout's Socks",
+        Feet = "Sct. Socks +1",
 
 }
 
@@ -124,9 +125,9 @@ layers.Sets.Base.Weaponskill["Slug Shot"] = {
         Body = "Kirin's Osode",
         Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
-        Ring2 = 'Scorpion Ring +1',
+        Ring2 = "Flame Ring",
         Legs = "Scout's Braccae" ,
-        Feet = "Scout's Socks",
+        Feet = "Sct. Socks +1",
 
 }
 
@@ -136,11 +137,11 @@ layers.Sets.Acc.Weaponskill["Slug Shot"] = {
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = "Hunter's Jerkin",
-        Hands = "Hunter's Bracers",
-        Ring1 = 'Scorpion Ring +1',
-        Ring2 = 'Scorpion Ring +1',
+        Hands = "Seiryu's Kote",
+        Ring1 = 'Coral Ring',
+        Ring2 = "Merman's Ring",
         Legs = "Scout's Braccae" ,
-        Feet = "Scout's Socks",
+        Feet = "Sct. Socks +1",
 
 }
 
@@ -161,6 +162,19 @@ layers.Sets.Ability["Scavenge"] ={
 layers.Sets.Ability["Camouflage"] ={
         Body = "Hunter's Jerkin"
 }
+
+layers.Sets.Barrage ={
+        Head = 'Optical Hat',
+        Neck = "Peacock Amulet",
+        Ear1 = 'Drone Earring',
+        Ear2 = 'Drone Earring',
+        Body = "Hunter's Jerkin",
+        Hands = "Htr. Bracers +1",
+        Ring1 = 'Coral Ring',
+        Ring2 = "Merman's Ring",
+        Legs = "Scout's Braccae" ,
+        Feet = "Sct. Socks +1",
+}
 -- layers.RegisterCallback("PostHandleMidshot", function()
 --         local equip = gData.GetEquipment()
 --         local player = gData.GetPlayer()        
@@ -179,4 +193,25 @@ layers.RegisterCallback("PostHandleEngaged", function()
                 gFunc.Equip("Body", "Black Cotehardie")
         end
 end, "Regen Gear")
+
+
+layers.RegisterCallback("PostHandleWeaponskill", function()
+        local equip = gData.GetEquipment()
+        local Unlimited = gData.GetBuffCount('Unlimited Shot')
+        local player = gData.GetPlayer()        
+        if 
+                (equip.Range.Name =="Hellfire +1") and (Unlimited == 1) then
+        gFunc.Equip("Ammo", "Carapace Bullet")
+        else    
+                gFunc.Equip("Ammo", "Silver Bullet")
+
+        end
+end, "Carapace Weaponskill")
+
+layers.RegisterCallback("PostHandleMidshot", function()
+        local Barrage = gData.GetBuffCount('Barrage')
+        if (Barrage == 1) then
+                gFunc.EquipSet(layers.Sets.Barrage);
+        end
+end, "Barrage Gear")
 return layers
