@@ -22,7 +22,7 @@ layers.Sets.Idle = {
         Hands = "Hunter's Bracers",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
-        Waist = 'Ryl.Kgt. Belt',
+        Waist = "Scout's Belt",
         Legs = "Republic Cuisses" ,
         Feet = "Hunter's Socks",
     }
