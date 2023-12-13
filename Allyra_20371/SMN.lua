@@ -25,7 +25,7 @@ layers.Sets.Resting = {
     Main = "Dark Staff",
     Body = "Errant Hpl.",
     Legs = "Baron's Slops",
-    Head = "Evoker's Horn"
+    Head = "Evoker's Horn",
     Feet = "Evoker's Pigaches +1",
 
 }
