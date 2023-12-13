@@ -120,7 +120,7 @@ layers.Sets.PetEngaged = layers.Sets.PetIdle
 layers.Sets.Ability['Blood Pact'] ={
     Hands = "Summoner's Bracers",
     Legs = "Summoner's Spats",
-    Feet = "Summoner's Pigaches",
+    Feet = "Summoner's Pgch.",
     Body = "Summoner's Dblt.",
     Head = "Evoker's Horn"
 
