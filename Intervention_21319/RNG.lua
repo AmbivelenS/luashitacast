@@ -13,18 +13,18 @@ local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 local regen = layers.CreateModeGroup('RegenGear', {'Off', 'On'}, '@3')
 
 layers.Sets.Idle = {
-        Head = 'Optical Hat',
+        Head = "Scout's Beret",
         Neck = "Jeweled Collar",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
-        Body = "Hunter's Jerkin",
+        Body = "Kirin's Osode",
         Back = 'Amemet Mantle',
-        Hands = "Hunter's Bracers",
+        Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Courage Ring',
         Waist = "Scout's Belt",
-        Legs = "Republic Cuisses" ,
-        Feet = "Hunter's Socks",
+        Legs = "Byakko's Haidate" ,
+        Feet = "Scout's Socks",
     }
 
 layers.Sets.Engaged = {
@@ -32,7 +32,7 @@ layers.Sets.Engaged = {
         Neck = "Peacock Amulet",
         Ear1 = 'Horn Earring +1',
         Ear2 = 'Horn Earring +1',
-        Body = 'Wonder Kaftan',
+        Body = "Kirin's Osode",
         Back = 'Amemet Mantle',
         Hands = "Wonder Mitts",
         Ring1 = 'Rajas Ring',
@@ -48,19 +48,20 @@ layers.Sets.XP.Idle = {Ring1 = "Chariot Band"}
 -- Preshot: Snapshot, Rapid Shot
 -- Midshot: R.Acc, STP, Crit. Rate % / Crit. Damage+, R.Att, Recycle/Etc
 layers.Sets.Preshot = {
-          Head = "Hunter's Beret",      
+        Head = "Hunter's Beret",  
+        Body = "Scout's Jerkin",  
 }
 layers.Sets.Base.Midshot = {
-        Head = "Hunter's Beret",
+        Head = "Scout's Beret",
         Neck = "Ranger's Necklace",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = "Hunter's Jerkin",
-        Hands = "Hunter's Bracers",
+        Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Crossbowman Ring',
         Legs = "Scout's Braccae" ,
-        Feet = "Hunter's Socks",
+        Feet = "Scout's Socks",
 
         }
 
@@ -70,11 +71,11 @@ layers.Sets.Acc.Midshot = {
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
         Body = "Hunter's Jerkin",
-        Hands = "Hunter's Bracers",
+        Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Scorpion Ring +1',
         Legs = "Scout's Braccae" ,
-        Feet = "Hunter's Socks",
+        Feet = "Scout's Socks",
 
         }
 
@@ -98,30 +99,35 @@ layers.Sets.Mnd = {
         Ring2 = 'Saintly Ring',
         Waist = "Friar's Rope",
         Legs = "Wonder Braccae",
+        Feet = "Suzaku's Sune-Ate"
      }
 
 layers.Sets.Weaponskill = {
-        Head = 'Optical Hat',
-        Neck = "Spike Necklace",
+        Head = 'Wyvern Helm',
+        Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
         Ear2 = 'Drone Earring',
-        Body = 'Wonder Kaftan',
-        Hands = "Wonder Mitts",
+        Body = "Kirin's Osode",
+        Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Scorpion Ring +1',
-        Legs = "Wonder Braccae",
+        Legs = "Scout's Braccae" ,
+        Feet = "Scout's Socks",
+
 }
 
 layers.Sets.Base.Weaponskill["Slug Shot"] = {
-        Head = 'Optical Hat',
+        Head = 'Wyvern Helm',
         Neck = "Peacock Amulet",
         Ear1 = 'Minuet Earring',
         Ear2 = 'Drone Earring',
-        Body = "Hunter's Jerkin",
-        Hands = "Wonder Mitts",
+        Body = "Kirin's Osode",
+        Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = 'Scorpion Ring +1',
-        Legs = "Noct Brais +1" ,
+        Legs = "Scout's Braccae" ,
+        Feet = "Scout's Socks",
+
 }
 
 layers.Sets.Acc.Weaponskill["Slug Shot"] = {
@@ -133,7 +139,9 @@ layers.Sets.Acc.Weaponskill["Slug Shot"] = {
         Hands = "Hunter's Bracers",
         Ring1 = 'Scorpion Ring +1',
         Ring2 = 'Scorpion Ring +1',
-        Legs = "Noct Brais +1" ,
+        Legs = "Scout's Braccae" ,
+        Feet = "Scout's Socks",
+
 }
 
 layers.Sets.Weaponskill["Sidewinder"] = layers.Sets.Weaponskill["Slug Shot"]

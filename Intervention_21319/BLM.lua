@@ -53,6 +53,8 @@ layers.Sets.Midcast = {}
 layers.Sets.Precast = {
     Head = "Nashira Turban",
     Waist = "Swift Belt",
+    Legs = "Nashira Seraweels",
+
 
 }
 
@@ -117,6 +119,7 @@ layers.Sets.OneFifty.Midcast['Enfeebling Elemental'] = {
 layers.Sets.Midcast['Enfeebling'] = {
     Head = "Sorcerer's Petas.",
     Body = 'Wizard\'s Coat',
+    Legs = "Nashira Seraweels",
 
 }
 
