@@ -64,6 +64,7 @@ layers.Sets.Low.Midcast['Single Target Elemental'] = {
     Body = "Igqira Weskit",
     Hands = "Zenith Mitts",
     Neck = "Philomath Stole",
+    Waist = "Sorcerer's Belt",
     Feet = "Src. Sabots +1",
 }
 layers.Sets.High.Midcast['Single Target Elemental'] = {
@@ -71,6 +72,7 @@ layers.Sets.High.Midcast['Single Target Elemental'] = {
     Body = "Igqira Weskit",
     Legs = "Nashira Seraweels",
     Hands = "Wizard's Gloves",
+    Waist = "Sorcerer's Belt",
     Neck = 'Elemental Torque',  
     Feet = "Src. Sabots +1",
 
@@ -96,7 +98,7 @@ layers.Sets.High.Midcast['Enfeebling Elemental'] = {
     Legs = "Nashira Seraweels",
     Hands = "Wizard's Gloves",
     Neck = 'Elemental Torque',  
-    Feet = "Src. Sabots +1", 
+    Feet = "Src. Sabots +1",  
 }
 
 layers.Sets.OneFifty.Midcast['Enfeebling Elemental'] = {
