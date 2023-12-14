@@ -90,6 +90,8 @@ layers.Sets.Low.Midcast['Enfeebling Elemental'] = {
     Head = "Wzd. Petasos +1",
     Body = "Errant Hpl.",
     Hands = "Errant Cuffs",
+    Waist = "Sorcerer's Belt",
+    Legs = "Mahatma Slops",
     Neck = "Philomath Stole",
 }
 layers.Sets.High.Midcast['Enfeebling Elemental'] = {
@@ -97,6 +99,7 @@ layers.Sets.High.Midcast['Enfeebling Elemental'] = {
     Body = "Igqira Weskit",
     Legs = "Nashira Seraweels",
     Hands = "Wizard's Gloves",
+    Waist = "Sorcerer's Belt",
     Neck = 'Elemental Torque',  
     Feet = "Src. Sabots +1",  
 }
