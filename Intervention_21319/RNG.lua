@@ -166,6 +166,19 @@ layers.Sets.Ability["Camouflage"] ={
         Body = "Hunter's Jerkin"
 }
 
+layers.Sets.Ability['Charm'] = {
+        Main = "Light Staff",
+        Head = "Noble's Ribbon",
+        Body = "Kirin's Osode",
+        --Hands ='Monster Gloves',
+        --Legs = 'Bst. Trousers +1',
+        --Feet = "Monster Gaiters",
+        Neck = 'Bird Whistle',
+        Ring1 = 'Hope Ring',
+        Ring2 = 'Hope Ring',
+        Waist = 'Corsette',
+        Back = "Trimmer's Mantle"
+
 layers.Sets.Barrage ={
         Head = 'Optical Hat',
         Neck = "Peacock Amulet",
