@@ -12,6 +12,8 @@ local refreshBody = layers.CreateModeGroup('RefreshBody', {'Off', 'RBody'}, '@2'
 
 local sleepNeck = layers.CreateModeGroup('SleepNeck', {'Off', 'SNeck'}, '@3')
 
+local TPMode = layers.CreateModeGroup("TPSet", {"Haste", "MidAcc" , "HighAcc"}, '@4')
+local WSMode = layers.CreateModeGroup("WSSet", {"Base", "MidAccWS", "HighAccWS"}, '@5')
 
 layers.Sets.RGorget.Idle = {Neck = 'Parade Gorget',}
 layers.Sets.RBody.Idle = {
@@ -58,7 +60,7 @@ layers.Sets.Idle = {
         Feet = 'Homam Gambieras',
     }
 
-layers.Sets.Engaged = {
+layers.Sets.Haste.Engaged = {
         Head = 'Homam Zucchetto',
         Neck = 'Peacock Amulet',
         Body = 'Haubergeon',
@@ -71,7 +73,14 @@ layers.Sets.Engaged = {
         Legs = 'Homam Cosciales',
     }
 
-layers.Sets.Weaponskill ={
+layers.Sets.MidAcc.Engaged ={
+
+}
+
+layers.Sets.HighAcc.Engaged ={
+
+}
+layers.Sets.Base.Weaponskill ={
         Neck = 'Peacock Amulet',
         Body = 'Haubergeon',
         Hands = 'Black Gadlings',
@@ -81,6 +90,14 @@ layers.Sets.Weaponskill ={
         Head = 'Optical Hat',
         Legs = 'Black Cuisses',
     }
+
+layers.Sets.MidAccWS.Weaponskill ={
+
+}
+
+layers.Sets.HighAccWS.Weaponskill ={
+    
+}
 
 layers.Sets.Ability['Souleater'] = {
         Head = 'Chaos Burgeonet',
