@@ -74,10 +74,12 @@ layers.Sets.Haste.Engaged = {
     }
 
 layers.Sets.MidAcc.Engaged ={
-
+        Head = "Optical Hat",
 }
 
 layers.Sets.HighAcc.Engaged ={
+        Head = "Optical Hat",
+        Waist = 'Life Belt',
 
 }
 layers.Sets.Base.Weaponskill ={
@@ -96,7 +98,7 @@ layers.Sets.MidAccWS.Weaponskill ={
 }
 
 layers.Sets.HighAccWS.Weaponskill ={
-    
+
 }
 
 layers.Sets.Ability['Souleater'] = {
