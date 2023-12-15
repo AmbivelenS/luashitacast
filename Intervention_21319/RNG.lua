@@ -8,7 +8,7 @@ AshitaCore:GetChatManager():QueueCommand(1, '/macro set '.. macroSet);
 
 
 -- local boltMode = layers.CreateModeGroup('boltStat', {'Off', 'Mnd', 'Int'}, '@t')
-local attackMode = layers.CreateModeGroup('AttackMode', {'Base', 'Acc', 'Stat'}, '@t')
+local attackMode = layers.CreateModeGroup('AttackMode', {'Base', 'Acc' }, '@t')
 local idleEquip = layers.CreateModeGroup('ExpBand', {'Off', 'XP'}, '@x')
 local regen = layers.CreateModeGroup('RegenGear', {'Off', 'On'}, '@3')
 
@@ -80,16 +80,6 @@ layers.Sets.Acc.Midshot = {
 
         }
 
-layers.Sets.Stat.Midshot = {
-        Head = 'Optical Hat',
-        Neck = "Ranger's Necklace",
-        Ear1 = 'Drone Earring',
-        Ear2 = 'Drone Earring',
-        Body = 'Wonder Kaftan',
-        Hands = "Wonder Mitts",
-        Ring1 = 'Rajas Ring',
-        Ring2 = 'Crossbowman Ring',
-        Legs = "Wonder Braccae",
 }
 layers.Sets.Mnd = {
         Head = "Traveler's Hat",
@@ -103,7 +93,7 @@ layers.Sets.Mnd = {
         Feet = "Suzaku's Sune-Ate"
      }
 
-layers.Sets.Weaponskill = {
+layers.Sets.Base.Weaponskill = {
         Head = 'Wyvern Helm',
         Neck = "Peacock Amulet",
         Ear1 = 'Drone Earring',
@@ -112,6 +102,20 @@ layers.Sets.Weaponskill = {
         Hands = "Seiryu's Kote",
         Ring1 = 'Rajas Ring',
         Ring2 = "Flame Ring",
+        Legs = "Scout's Braccae" ,
+        Feet = "Sct. Socks +1",
+
+}
+
+layers.Sets.Acc.Weaponskill = {
+        Head = 'Optical Hat',
+        Neck = "Peacock Amulet",
+        Ear1 = 'Drone Earring',
+        Ear2 = 'Drone Earring',
+        Body = "Hunter's Jerkin",
+        Hands = "Seiryu's Kote",
+        Ring1 = 'Coral Ring',
+        Ring2 = "Merman's Ring",
         Legs = "Scout's Braccae" ,
         Feet = "Sct. Socks +1",
 
