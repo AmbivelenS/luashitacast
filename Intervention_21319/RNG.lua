@@ -80,7 +80,6 @@ layers.Sets.Acc.Midshot = {
 
         }
 
-}
 layers.Sets.Mnd = {
         Head = "Traveler's Hat",
         Neck = "Justice Badge",
