@@ -178,7 +178,7 @@ layers.Sets.Ability['Charm'] = {
         Ring2 = 'Hope Ring',
         Waist = 'Corsette',
         Back = "Trimmer's Mantle"
-
+}
 layers.Sets.Barrage ={
         Head = 'Optical Hat',
         Neck = "Peacock Amulet",
