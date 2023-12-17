@@ -63,6 +63,7 @@ layers.Sets.Low.Midcast['Single Target Elemental'] = {
     Head = "Wzd. Petasos +1",
     Body = "Igqira Weskit",
     Hands = "Zenith Mitts",
+    Legs = "Mahatma Slops",
     Neck = "Philomath Stole",
     Waist = "Sorcerer's Belt",
     Feet = "Src. Sabots +1",
