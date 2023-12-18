@@ -57,7 +57,7 @@ layers.Sets.Idle = {
         Ring2 = 'Jaeger Ring',
         Back = 'Abyss Cape',
         Waist = 'Swift Belt',
-        Legs = 'Homam Cosciales',
+        Legs = 'Crimson Cuisses',
         Feet = 'Homam Gambieras',
     }
 
