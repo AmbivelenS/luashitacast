@@ -224,6 +224,20 @@ layers.RegisterCallback("PostHandleWeaponskill", function()
         end
 end, "Carapace Weaponskill")
 
+
+layers.RegisterCallback("PostHandleMidshot", function()
+        local equip = gData.GetEquipment()
+        local Unlimited = gData.GetBuffCount('Unlimited Shot')
+        local player = gData.GetPlayer()        
+        if 
+                (equip.Range.Name =="Hellfire +1") and (Unlimited == 1) then
+        gFunc.Equip("Ammo", "Carapace Bullet")
+        else    
+                gFunc.Equip("Ammo", "Silver Bullet")
+
+        end
+end, "Carapace MidShot")
+
 layers.RegisterCallback("PostHandleMidshot", function()
         local Barrage = gData.GetBuffCount('Barrage')
         if (Barrage == 1) then
