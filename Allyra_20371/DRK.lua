@@ -18,7 +18,8 @@ local WSMode = layers.CreateModeGroup("WSSet", {"Base", "MidAccWS", "HighAccWS"}
 layers.Sets.RGorget.Idle = {Neck = 'Parade Gorget',}
 layers.Sets.RBody.Idle = {
         Head = '',
-        Body = 'Vampire Cloak',}
+        Body = 'Vampire Cloak',
+        Legs = 'Crimson Cuisses',}
 layers.Sets.SNeck.Idle = {Neck = 'Opo-opo Necklace',}
 
 layers.Sets.RGorget.Engaged = {Neck = 'Parade Gorget',}
