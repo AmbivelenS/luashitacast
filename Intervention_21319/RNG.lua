@@ -83,12 +83,12 @@ layers.Sets.Acc.Midshot = {
 layers.Sets.Mnd = {
         Head = "Traveler's Hat",
         Neck = "Justice Badge",
-        Body = 'Wonder Kaftan',
+        Body = "Kirin's Osode",
         Hands = "Devotee's Mitts",
         Ring1 = 'Saintly Ring',
         Ring2 = 'Saintly Ring',
         Waist = "Friar's Rope",
-        Legs = "Wonder Braccae",
+        Legs = "Hunter's Braccae",
         Feet = "Suzaku's Sune-Ate"
      }
 

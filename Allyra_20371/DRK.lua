@@ -125,6 +125,8 @@ layers.Sets.Dark = {
         Legs = 'Abyss Flanchard',
         Body = 'Haubergeon',
         Hands = 'Abyss Gauntlets',
+        Ring2 = "Overlord's Ring",
+
     }
 layers.Sets.Elemental = {
         Body = 'Abyss Cuirass',
