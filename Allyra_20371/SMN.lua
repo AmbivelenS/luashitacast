@@ -10,14 +10,14 @@ layers.Sets.Idle = {
     Hands = "Nashira Gages",
     Legs = "Evoker's Spats",
     Feet = "Evk. Pigaches +1",
-    Neck = "",
-    Waist = "",
-    Ammo = "",
-    Back = "",
-    Ear1 = "",
-    Ear2 = "",
-    Ring1 = "",
-    Ring2 = ""
+    Neck = "Summoning Torque",
+    Waist = "Hierarch Belt",
+    Ammo = "Fortune Egg",
+    Back = "Summoner's Cape",
+    Ear1 = "Beastly Earring",
+    Ear2 = "Loquacious Earring",
+    Ring1 = "Evoker's Ring",
+    Ring2 = "Ether Ring"
 
 }
 
