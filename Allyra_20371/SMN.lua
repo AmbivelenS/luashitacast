@@ -7,7 +7,7 @@ layers.Sets.Idle = {
 
     Head = "",
     Body = "Vermillion Cloak",
-    Hands = "",
+    Hands = "Nashira Gages",
     Legs = "Evoker's Spats",
     Feet = "Evk. Pigaches +1",
     Neck = "",
@@ -45,7 +45,7 @@ layers.Sets.PetIdle['Light Affinity'] = {
 
 layers.Sets.PetIdle['Dark Affinity'] = { 
     Main = "Dark Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",
     Head = "",
     Legs = "Evoker's Spats",
     Feet = "Evk. Pigaches +1", 
@@ -53,7 +53,7 @@ layers.Sets.PetIdle['Dark Affinity'] = {
 
 layers.Sets.PetIdle['Earth Affinity'] = { 
     Main = "Earth Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",
     Feet = "Evk. Pigaches +1",
     Head = "",
     Legs = "Evoker's Spats",
@@ -61,7 +61,7 @@ layers.Sets.PetIdle['Earth Affinity'] = {
 
 layers.Sets.PetIdle['Water Affinity'] = { 
     Main = "Water Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",
     Legs = "Evoker's Spats",
     Feet = "Evk. Pigaches +1",
     Head = "",
@@ -69,7 +69,7 @@ layers.Sets.PetIdle['Water Affinity'] = {
 
 layers.Sets.PetIdle['Wind Affinity'] = { 
     Main = "Wind Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",
     Feet = "Evk. Pigaches +1",
     Legs = "Evoker's Spats",
     Head = "",
@@ -77,7 +77,7 @@ layers.Sets.PetIdle['Wind Affinity'] = {
 
 layers.Sets.PetIdle['Fire Affinity'] = { 
     Main = "Fire Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",
     Feet = "Evk. Pigaches +1",
     Legs = "Evoker's Spats",
     Head = "",
@@ -86,7 +86,7 @@ layers.Sets.PetIdle['Fire Affinity'] = {
 
 layers.Sets.PetIdle['Ice Affinity'] = { 
     Main = "Ice Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",    
     Legs = "Evoker's Spats",
     Feet = "Evk. Pigaches +1",
     Head = "",
@@ -95,7 +95,7 @@ layers.Sets.PetIdle['Ice Affinity'] = {
 
 layers.Sets.PetIdle['Lightning Affinity'] = { 
     Main = "Thunder Staff",
-    Hands = "Summoner's Bracers",
+    Hands = "Nashira Gages",    
     Feet = "Evk. Pigaches +1",
     Legs = "Evoker's Spats",
     Head = "",
